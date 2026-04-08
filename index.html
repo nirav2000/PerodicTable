@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table Palace</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Offline-first memory trainer</p>
+        <h1>Periodic Table Palace</h1>
+        <p class="hero-copy">
+          Build your 00-99 number-image system, customise vivid element images, walk a full 118-locus memory palace, and follow a 7-day intensive plan.
+        </p>
+      </div>
+      <div class="hero-actions">
+        <button id="exportBtn" class="btn">Export JSON</button>
+        <label class="btn ghost upload-btn">
+          Import JSON
+          <input id="importInput" type="file" accept="application/json" hidden />
+        </label>
+        <button id="resetBtn" class="btn ghost danger">Reset to defaults</button>
+      </div>
+    </header>
+
+    <nav class="tabbar" aria-label="App sections">
+      <button class="tab active" data-tab="overview">Overview</button>
+      <button class="tab" data-tab="numbers">00-99 system</button>
+      <button class="tab" data-tab="elements">118 elements</button>
+      <button class="tab" data-tab="palace">Memory palace</button>
+      <button class="tab" data-tab="plan">7-day plan</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </nav>
+
+    <main>
+      <section id="overview" class="tab-panel active">
+        <div class="grid two">
+          <article class="card stat-card">
+            <h2>How to link information</h2>
+            <ol class="steps">
+              <li><strong>Element image:</strong> Turn the element into a vivid scene.</li>
+              <li><strong>Atomic number image:</strong> Convert the number into your 00-99 cue.</li>
+              <li><strong>Collision:</strong> Make both images interact violently or absurdly.</li>
+              <li><strong>Locus:</strong> Drop the combined scene on the fixed palace location.</li>
+              <li><strong>Recall:</strong> Walk the palace and decode place → number → element.</li>
+            </ol>
+          </article>
+          <article class="card stat-card">
+            <h2>Suggested daily use</h2>
+            <ul class="compact-list">
+              <li>10 minutes: number-image review</li>
+              <li>10 minutes: element encoding</li>
+              <li>5 minutes: palace walkthrough</li>
+              <li>5 minutes: random quiz or teach-back</li>
+            </ul>
+            <p class="muted">The app saves to localStorage today. Firestore wiring is included but disabled until you add Firestore rules and choose an auth approach.</p>
+          </article>
+        </div>
+        <section class="card">
+          <h2>Quick start</h2>
+          <div id="quickStart" class="quick-start"></div>
+        </section>
+      </section>
+
+      <section id="numbers" class="tab-panel">
+        <section class="card toolbar-card">
+          <div>
+            <h2>00-99 Number-Image System</h2>
+            <p class="muted">Tap any row to edit the cue word or vivid image so it matches your own associations.</p>
+          </div>
+          <input id="numberSearch" type="search" placeholder="Filter by number or cue..." />
+        </section>
+        <section id="numbersGrid" class="grid cards"></section>
+      </section>
+
+      <section id="elements" class="tab-panel">
+        <section class="card toolbar-card">
+          <div>
+            <h2>Element Image Bank</h2>
+            <p class="muted">Every element starts with a vivid default. Edit any image so the scene is more personal and memorable.</p>
+          </div>
+          <input id="elementSearch" type="search" placeholder="Filter by name, symbol, number, family..." />
+        </section>
+        <section id="elementsGrid" class="grid cards"></section>
+      </section>
+
+      <section id="palace" class="tab-panel">
+        <section class="card">
+          <h2>Full 118-element memory palace</h2>
+          <p class="muted">Each room is fixed. Do not move loci around casually once you start memorising.</p>
+          <div id="palaceRooms" class="palace-rooms"></div>
+        </section>
+      </section>
+
+      <section id="plan" class="tab-panel">
+        <section class="card">
+          <h2>7-day intensive plan</h2>
+          <div id="planGrid" class="grid cards"></div>
+        </section>
+      </section>
+
+      <section id="settings" class="tab-panel">
+        <div class="grid two">
+          <article class="card">
+            <h2>Storage</h2>
+            <p><strong>Current mode:</strong> <span id="storageModeLabel">Local only</span></p>
+            <p class="muted">Local storage is active now. Firestore scaffolding is ready for a future phase.</p>
+          </article>
+          <article class="card">
+            <h2>Firestore future setup</h2>
+            <ul class="compact-list">
+              <li>Choose authentication: anonymous, email/password, or Google sign-in.</li>
+              <li>Create Firestore rules for a per-user <code>users/{uid}</code> document.</li>
+              <li>Confirm whether you want shared family access for your son or only your own private data.</li>
+              <li>Decide whether version archives should also be mirrored in Firestore.</li>
+            </ul>
+            <pre class="code-block" id="firebaseSnippet"></pre>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Periodic Table Palace</span>
+      <button id="versionButton" class="version-link" type="button">v0.1.0</button>
+    </footer>
+
+    <dialog id="versionDialog" class="modal">
+      <article>
+        <div class="modal-header">
+          <h2>Version information</h2>
+          <button id="closeVersionDialog" class="icon-btn" type="button" aria-label="Close version dialog">✕</button>
+        </div>
+        <div id="versionDetails"></div>
+      </article>
+    </dialog>
+
+    <template id="editableCardTemplate">
+      <article class="card editable-card">
+        <div class="row between wrap gap-sm">
+          <h3 class="card-title"></h3>
+          <span class="badge"></span>
+        </div>
+        <p class="meta"></p>
+        <label>
+          <span>Cue</span>
+          <input class="cue-input" />
+        </label>
+        <label>
+          <span>Vivid image</span>
+          <textarea class="image-input" rows="3"></textarea>
+        </label>
+      </article>
+    </template>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,1772 @@
+[
+  {
+    "atomicNumber": 1,
+    "symbol": "H",
+    "name": "Hydrogen",
+    "group": 1,
+    "period": 1,
+    "category": "nonmetal",
+    "defaultImage": "a giant hissing hydrogen balloon exploding into white fire",
+    "memoryPalace": {
+      "atomicNumber": 1,
+      "room": "Front Garden",
+      "locus": "gate"
+    },
+    "linkingHint": "Picture a giant hissing hydrogen balloon exploding into white fire colliding with the seed for 1, then anchor that scene on the gate in the Front Garden."
+  },
+  {
+    "atomicNumber": 2,
+    "symbol": "He",
+    "name": "Helium",
+    "group": 18,
+    "period": 1,
+    "category": "noble gas",
+    "defaultImage": "a silver party balloon making everyone speak in squeaky voices",
+    "memoryPalace": {
+      "atomicNumber": 2,
+      "room": "Front Garden",
+      "locus": "path"
+    },
+    "linkingHint": "Picture a silver party balloon making everyone speak in squeaky voices colliding with the sun for 2, then anchor that scene on the path in the Front Garden."
+  },
+  {
+    "atomicNumber": 3,
+    "symbol": "Li",
+    "name": "Lithium",
+    "group": 1,
+    "period": 2,
+    "category": "alkali metal",
+    "defaultImage": "a glowing phone battery hissing and leaking sparks",
+    "memoryPalace": {
+      "atomicNumber": 3,
+      "room": "Front Garden",
+      "locus": "mailbox"
+    },
+    "linkingHint": "Picture a glowing phone battery hissing and leaking sparks colliding with the sumo for 3, then anchor that scene on the mailbox in the Front Garden."
+  },
+  {
+    "atomicNumber": 4,
+    "symbol": "Be",
+    "name": "Beryllium",
+    "group": 2,
+    "period": 2,
+    "category": "alkaline earth metal",
+    "defaultImage": "a metal bee drilling through a shiny helmet",
+    "memoryPalace": {
+      "atomicNumber": 4,
+      "room": "Front Garden",
+      "locus": "hedge"
+    },
+    "linkingHint": "Picture a metal bee drilling through a shiny helmet colliding with the sewer for 4, then anchor that scene on the hedge in the Front Garden."
+  },
+  {
+    "atomicNumber": 5,
+    "symbol": "B",
+    "name": "Boron",
+    "group": 13,
+    "period": 2,
+    "category": "metalloid",
+    "defaultImage": "a giant boring drill chewing a black crystal",
+    "memoryPalace": {
+      "atomicNumber": 5,
+      "room": "Front Garden",
+      "locus": "bench"
+    },
+    "linkingHint": "Picture a giant boring drill chewing a black crystal colliding with the sail for 5, then anchor that scene on the bench in the Front Garden."
+  },
+  {
+    "atomicNumber": 6,
+    "symbol": "C",
+    "name": "Carbon",
+    "group": 14,
+    "period": 2,
+    "category": "nonmetal",
+    "defaultImage": "a barbecue briquette diamond spinning between flames",
+    "memoryPalace": {
+      "atomicNumber": 6,
+      "room": "Front Garden",
+      "locus": "flower bed"
+    },
+    "linkingHint": "Picture a barbecue briquette diamond spinning between flames colliding with the sausage for 6, then anchor that scene on the flower bed in the Front Garden."
+  },
+  {
+    "atomicNumber": 7,
+    "symbol": "N",
+    "name": "Nitrogen",
+    "group": 15,
+    "period": 2,
+    "category": "nonmetal",
+    "defaultImage": "an icy knight blasting frosty blue gas",
+    "memoryPalace": {
+      "atomicNumber": 7,
+      "room": "Front Garden",
+      "locus": "birdbath"
+    },
+    "linkingHint": "Picture an icy knight blasting frosty blue gas colliding with the sock for 7, then anchor that scene on the birdbath in the Front Garden."
+  },
+  {
+    "atomicNumber": 8,
+    "symbol": "O",
+    "name": "Oxygen",
+    "group": 16,
+    "period": 2,
+    "category": "nonmetal",
+    "defaultImage": "a huge oxygen mask pumping bright air into your lungs",
+    "memoryPalace": {
+      "atomicNumber": 8,
+      "room": "Front Garden",
+      "locus": "porch step"
+    },
+    "linkingHint": "Picture a huge oxygen mask pumping bright air into your lungs colliding with the sofa for 8, then anchor that scene on the porch step in the Front Garden."
+  },
+  {
+    "atomicNumber": 9,
+    "symbol": "F",
+    "name": "Fluorine",
+    "group": 17,
+    "period": 2,
+    "category": "halogen",
+    "defaultImage": "toxic toothpaste foam etching the floor",
+    "memoryPalace": {
+      "atomicNumber": 9,
+      "room": "Front Garden",
+      "locus": "doormat"
+    },
+    "linkingHint": "Picture toxic toothpaste foam etching the floor colliding with the soap for 9, then anchor that scene on the doormat in the Front Garden."
+  },
+  {
+    "atomicNumber": 10,
+    "symbol": "Ne",
+    "name": "Neon",
+    "group": 18,
+    "period": 2,
+    "category": "noble gas",
+    "defaultImage": "a hot pink neon sign buzzing loudly",
+    "memoryPalace": {
+      "atomicNumber": 10,
+      "room": "Front Garden",
+      "locus": "front door"
+    },
+    "linkingHint": "Picture a hot pink neon sign buzzing loudly colliding with the toes for 10, then anchor that scene on the front door in the Front Garden."
+  },
+  {
+    "atomicNumber": 11,
+    "symbol": "Na",
+    "name": "Sodium",
+    "group": 1,
+    "period": 3,
+    "category": "alkali metal",
+    "defaultImage": "a fizzy soda can exploding in water",
+    "memoryPalace": {
+      "atomicNumber": 11,
+      "room": "Hallway",
+      "locus": "shoe rack"
+    },
+    "linkingHint": "Picture a fizzy soda can exploding in water colliding with the tot for 11, then anchor that scene on the shoe rack in the Hallway."
+  },
+  {
+    "atomicNumber": 12,
+    "symbol": "Mg",
+    "name": "Magnesium",
+    "group": 2,
+    "period": 3,
+    "category": "alkaline earth metal",
+    "defaultImage": "a blinding white flare burning like a mini sun",
+    "memoryPalace": {
+      "atomicNumber": 12,
+      "room": "Hallway",
+      "locus": "mirror"
+    },
+    "linkingHint": "Picture a blinding white flare burning like a mini sun colliding with the tin for 12, then anchor that scene on the mirror in the Hallway."
+  },
+  {
+    "atomicNumber": 13,
+    "symbol": "Al",
+    "name": "Aluminium",
+    "group": 13,
+    "period": 3,
+    "category": "post-transition metal",
+    "defaultImage": "crinkled foil wrapping the whole room",
+    "memoryPalace": {
+      "atomicNumber": 13,
+      "room": "Hallway",
+      "locus": "coat hooks"
+    },
+    "linkingHint": "Picture crinkled foil wrapping the whole room colliding with the tomb for 13, then anchor that scene on the coat hooks in the Hallway."
+  },
+  {
+    "atomicNumber": 14,
+    "symbol": "Si",
+    "name": "Silicon",
+    "group": 14,
+    "period": 3,
+    "category": "metalloid",
+    "defaultImage": "computer chips growing like shiny leaves",
+    "memoryPalace": {
+      "atomicNumber": 14,
+      "room": "Hallway",
+      "locus": "console table"
+    },
+    "linkingHint": "Picture computer chips growing like shiny leaves colliding with the tire for 14, then anchor that scene on the console table in the Hallway."
+  },
+  {
+    "atomicNumber": 15,
+    "symbol": "P",
+    "name": "Phosphorus",
+    "group": 15,
+    "period": 3,
+    "category": "nonmetal",
+    "defaultImage": "a glowing green skull scribbling with fire",
+    "memoryPalace": {
+      "atomicNumber": 15,
+      "room": "Hallway",
+      "locus": "umbrella stand"
+    },
+    "linkingHint": "Picture a glowing green skull scribbling with fire colliding with the tail for 15, then anchor that scene on the umbrella stand in the Hallway."
+  },
+  {
+    "atomicNumber": 16,
+    "symbol": "S",
+    "name": "Sulfur",
+    "group": 16,
+    "period": 3,
+    "category": "nonmetal",
+    "defaultImage": "a mountain of rotten eggs and yellow smoke",
+    "memoryPalace": {
+      "atomicNumber": 16,
+      "room": "Hallway",
+      "locus": "stairs"
+    },
+    "linkingHint": "Picture a mountain of rotten eggs and yellow smoke colliding with the dish for 16, then anchor that scene on the stairs in the Hallway."
+  },
+  {
+    "atomicNumber": 17,
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "group": 17,
+    "period": 3,
+    "category": "halogen",
+    "defaultImage": "a swimming pool cloud stinging your eyes",
+    "memoryPalace": {
+      "atomicNumber": 17,
+      "room": "Hallway",
+      "locus": "landing lamp"
+    },
+    "linkingHint": "Picture a swimming pool cloud stinging your eyes colliding with the tack for 17, then anchor that scene on the landing lamp in the Hallway."
+  },
+  {
+    "atomicNumber": 18,
+    "symbol": "Ar",
+    "name": "Argon",
+    "group": 18,
+    "period": 3,
+    "category": "noble gas",
+    "defaultImage": "an aloof king in a sealed glass bubble",
+    "memoryPalace": {
+      "atomicNumber": 18,
+      "room": "Hallway",
+      "locus": "picture frame"
+    },
+    "linkingHint": "Picture an aloof king in a sealed glass bubble colliding with the dove for 18, then anchor that scene on the picture frame in the Hallway."
+  },
+  {
+    "atomicNumber": 19,
+    "symbol": "K",
+    "name": "Potassium",
+    "group": 1,
+    "period": 4,
+    "category": "alkali metal",
+    "defaultImage": "a banana bomb splashing in water",
+    "memoryPalace": {
+      "atomicNumber": 19,
+      "room": "Hallway",
+      "locus": "radiator"
+    },
+    "linkingHint": "Picture a banana bomb splashing in water colliding with the tube for 19, then anchor that scene on the radiator in the Hallway."
+  },
+  {
+    "atomicNumber": 20,
+    "symbol": "Ca",
+    "name": "Calcium",
+    "group": 2,
+    "period": 4,
+    "category": "alkaline earth metal",
+    "defaultImage": "huge glowing bones stacking like furniture",
+    "memoryPalace": {
+      "atomicNumber": 20,
+      "room": "Hallway",
+      "locus": "side door"
+    },
+    "linkingHint": "Picture huge glowing bones stacking like furniture colliding with the nose for 20, then anchor that scene on the side door in the Hallway."
+  },
+  {
+    "atomicNumber": 21,
+    "symbol": "Sc",
+    "name": "Scandium",
+    "group": 3,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a scanner wand zapping a medal",
+    "memoryPalace": {
+      "atomicNumber": 21,
+      "room": "Living Room",
+      "locus": "sofa"
+    },
+    "linkingHint": "Picture a scanner wand zapping a medal colliding with the net for 21, then anchor that scene on the sofa in the Living Room."
+  },
+  {
+    "atomicNumber": 22,
+    "symbol": "Ti",
+    "name": "Titanium",
+    "group": 4,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a titanium titan lifting a car",
+    "memoryPalace": {
+      "atomicNumber": 22,
+      "room": "Living Room",
+      "locus": "armchair"
+    },
+    "linkingHint": "Picture a titanium titan lifting a car colliding with the nun for 22, then anchor that scene on the armchair in the Living Room."
+  },
+  {
+    "atomicNumber": 23,
+    "symbol": "V",
+    "name": "Vanadium",
+    "group": 5,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a vampire van coated in purple metal",
+    "memoryPalace": {
+      "atomicNumber": 23,
+      "room": "Living Room",
+      "locus": "coffee table"
+    },
+    "linkingHint": "Picture a vampire van coated in purple metal colliding with the gnome for 23, then anchor that scene on the coffee table in the Living Room."
+  },
+  {
+    "atomicNumber": 24,
+    "symbol": "Cr",
+    "name": "Chromium",
+    "group": 6,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a chrome mirror dragon reflecting sparks",
+    "memoryPalace": {
+      "atomicNumber": 24,
+      "room": "Living Room",
+      "locus": "TV"
+    },
+    "linkingHint": "Picture a chrome mirror dragon reflecting sparks colliding with the nero for 24, then anchor that scene on the TV in the Living Room."
+  },
+  {
+    "atomicNumber": 25,
+    "symbol": "Mn",
+    "name": "Manganese",
+    "group": 7,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a mango ninja slicing steel fruit",
+    "memoryPalace": {
+      "atomicNumber": 25,
+      "room": "Living Room",
+      "locus": "bookshelf"
+    },
+    "linkingHint": "Picture a mango ninja slicing steel fruit colliding with the nail for 25, then anchor that scene on the bookshelf in the Living Room."
+  },
+  {
+    "atomicNumber": 26,
+    "symbol": "Fe",
+    "name": "Iron",
+    "group": 8,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a heavy iron pressing clothes with sparks",
+    "memoryPalace": {
+      "atomicNumber": 26,
+      "room": "Living Room",
+      "locus": "window"
+    },
+    "linkingHint": "Picture a heavy iron pressing clothes with sparks colliding with the nacho for 26, then anchor that scene on the window in the Living Room."
+  },
+  {
+    "atomicNumber": 27,
+    "symbol": "Co",
+    "name": "Cobalt",
+    "group": 9,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a cobalt blue bolt striking a shield",
+    "memoryPalace": {
+      "atomicNumber": 27,
+      "room": "Living Room",
+      "locus": "plant"
+    },
+    "linkingHint": "Picture a cobalt blue bolt striking a shield colliding with the neck for 27, then anchor that scene on the plant in the Living Room."
+  },
+  {
+    "atomicNumber": 28,
+    "symbol": "Ni",
+    "name": "Nickel",
+    "group": 10,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a giant nickel coin spinning like a saw",
+    "memoryPalace": {
+      "atomicNumber": 28,
+      "room": "Living Room",
+      "locus": "rug"
+    },
+    "linkingHint": "Picture a giant nickel coin spinning like a saw colliding with the knife for 28, then anchor that scene on the rug in the Living Room."
+  },
+  {
+    "atomicNumber": 29,
+    "symbol": "Cu",
+    "name": "Copper",
+    "group": 11,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "copper pipes hissing with steam",
+    "memoryPalace": {
+      "atomicNumber": 29,
+      "room": "Living Room",
+      "locus": "lamp"
+    },
+    "linkingHint": "Picture copper pipes hissing with steam colliding with the knob for 29, then anchor that scene on the lamp in the Living Room."
+  },
+  {
+    "atomicNumber": 30,
+    "symbol": "Zn",
+    "name": "Zinc",
+    "group": 12,
+    "period": 4,
+    "category": "transition metal",
+    "defaultImage": "a zinc sink overflowing with silver foam",
+    "memoryPalace": {
+      "atomicNumber": 30,
+      "room": "Living Room",
+      "locus": "fireplace"
+    },
+    "linkingHint": "Picture a zinc sink overflowing with silver foam colliding with the mouse for 30, then anchor that scene on the fireplace in the Living Room."
+  },
+  {
+    "atomicNumber": 31,
+    "symbol": "Ga",
+    "name": "Gallium",
+    "group": 13,
+    "period": 4,
+    "category": "post-transition metal",
+    "defaultImage": "a galloping gallium horse melting in your hand",
+    "memoryPalace": {
+      "atomicNumber": 31,
+      "room": "Kitchen",
+      "locus": "fridge"
+    },
+    "linkingHint": "Picture a galloping gallium horse melting in your hand colliding with the mat for 31, then anchor that scene on the fridge in the Kitchen."
+  },
+  {
+    "atomicNumber": 32,
+    "symbol": "Ge",
+    "name": "Germanium",
+    "group": 14,
+    "period": 4,
+    "category": "metalloid",
+    "defaultImage": "a stern German robot polishing a crystal",
+    "memoryPalace": {
+      "atomicNumber": 32,
+      "room": "Kitchen",
+      "locus": "sink"
+    },
+    "linkingHint": "Picture a stern German robot polishing a crystal colliding with the moon for 32, then anchor that scene on the sink in the Kitchen."
+  },
+  {
+    "atomicNumber": 33,
+    "symbol": "As",
+    "name": "Arsenic",
+    "group": 15,
+    "period": 4,
+    "category": "metalloid",
+    "defaultImage": "a poison arsenic apple with black fumes",
+    "memoryPalace": {
+      "atomicNumber": 33,
+      "room": "Kitchen",
+      "locus": "oven"
+    },
+    "linkingHint": "Picture a poison arsenic apple with black fumes colliding with the mummy for 33, then anchor that scene on the oven in the Kitchen."
+  },
+  {
+    "atomicNumber": 34,
+    "symbol": "Se",
+    "name": "Selenium",
+    "group": 16,
+    "period": 4,
+    "category": "nonmetal",
+    "defaultImage": "the moon goddess Selena tossing grey powder",
+    "memoryPalace": {
+      "atomicNumber": 34,
+      "room": "Kitchen",
+      "locus": "hob"
+    },
+    "linkingHint": "Picture the moon goddess Selena tossing grey powder colliding with the mower for 34, then anchor that scene on the hob in the Kitchen."
+  },
+  {
+    "atomicNumber": 35,
+    "symbol": "Br",
+    "name": "Bromine",
+    "group": 17,
+    "period": 4,
+    "category": "halogen",
+    "defaultImage": "a brown bromine bottle leaking smoky liquid",
+    "memoryPalace": {
+      "atomicNumber": 35,
+      "room": "Kitchen",
+      "locus": "kettle"
+    },
+    "linkingHint": "Picture a brown bromine bottle leaking smoky liquid colliding with the mail for 35, then anchor that scene on the kettle in the Kitchen."
+  },
+  {
+    "atomicNumber": 36,
+    "symbol": "Kr",
+    "name": "Krypton",
+    "group": 18,
+    "period": 4,
+    "category": "noble gas",
+    "defaultImage": "Superman's glowing kryptonite cage",
+    "memoryPalace": {
+      "atomicNumber": 36,
+      "room": "Kitchen",
+      "locus": "island"
+    },
+    "linkingHint": "Picture Superman's glowing kryptonite cage colliding with the match for 36, then anchor that scene on the island in the Kitchen."
+  },
+  {
+    "atomicNumber": 37,
+    "symbol": "Rb",
+    "name": "Rubidium",
+    "group": 1,
+    "period": 5,
+    "category": "alkali metal",
+    "defaultImage": "a ruby cube bouncing like a heart",
+    "memoryPalace": {
+      "atomicNumber": 37,
+      "room": "Kitchen",
+      "locus": "stool"
+    },
+    "linkingHint": "Picture a ruby cube bouncing like a heart colliding with the mug for 37, then anchor that scene on the stool in the Kitchen."
+  },
+  {
+    "atomicNumber": 38,
+    "symbol": "Sr",
+    "name": "Strontium",
+    "group": 2,
+    "period": 5,
+    "category": "alkaline earth metal",
+    "defaultImage": "a strong strontium barbell shooting red fireworks",
+    "memoryPalace": {
+      "atomicNumber": 38,
+      "room": "Kitchen",
+      "locus": "cupboard"
+    },
+    "linkingHint": "Picture a strong strontium barbell shooting red fireworks colliding with the movie for 38, then anchor that scene on the cupboard in the Kitchen."
+  },
+  {
+    "atomicNumber": 39,
+    "symbol": "Y",
+    "name": "Yttrium",
+    "group": 3,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a yak in a yttrium spacesuit",
+    "memoryPalace": {
+      "atomicNumber": 39,
+      "room": "Kitchen",
+      "locus": "bin"
+    },
+    "linkingHint": "Picture a yak in a yttrium spacesuit colliding with the mop for 39, then anchor that scene on the bin in the Kitchen."
+  },
+  {
+    "atomicNumber": 40,
+    "symbol": "Zr",
+    "name": "Zirconium",
+    "group": 4,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a zircon diamond crown sparking with light",
+    "memoryPalace": {
+      "atomicNumber": 40,
+      "room": "Kitchen",
+      "locus": "back door"
+    },
+    "linkingHint": "Picture a zircon diamond crown sparking with light colliding with the rose for 40, then anchor that scene on the back door in the Kitchen."
+  },
+  {
+    "atomicNumber": 41,
+    "symbol": "Nb",
+    "name": "Niobium",
+    "group": 5,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a knight saying knee-oh beside a shiny box",
+    "memoryPalace": {
+      "atomicNumber": 41,
+      "room": "Dining Room",
+      "locus": "table"
+    },
+    "linkingHint": "Picture a knight saying knee-oh beside a shiny box colliding with the rat for 41, then anchor that scene on the table in the Dining Room."
+  },
+  {
+    "atomicNumber": 42,
+    "symbol": "Mo",
+    "name": "Molybdenum",
+    "group": 6,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a molar tooth made of steel",
+    "memoryPalace": {
+      "atomicNumber": 42,
+      "room": "Dining Room",
+      "locus": "chair 1"
+    },
+    "linkingHint": "Picture a molar tooth made of steel colliding with the rain for 42, then anchor that scene on the chair 1 in the Dining Room."
+  },
+  {
+    "atomicNumber": 43,
+    "symbol": "Tc",
+    "name": "Technetium",
+    "group": 7,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a techno DJ robot with radioactive turntables",
+    "memoryPalace": {
+      "atomicNumber": 43,
+      "room": "Dining Room",
+      "locus": "chair 2"
+    },
+    "linkingHint": "Picture a techno DJ robot with radioactive turntables colliding with the ram for 43, then anchor that scene on the chair 2 in the Dining Room."
+  },
+  {
+    "atomicNumber": 44,
+    "symbol": "Ru",
+    "name": "Ruthenium",
+    "group": 8,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a ruby ruth crown on a tiny bear",
+    "memoryPalace": {
+      "atomicNumber": 44,
+      "room": "Dining Room",
+      "locus": "chair 3"
+    },
+    "linkingHint": "Picture a ruby ruth crown on a tiny bear colliding with the rear for 44, then anchor that scene on the chair 3 in the Dining Room."
+  },
+  {
+    "atomicNumber": 45,
+    "symbol": "Rh",
+    "name": "Rhodium",
+    "group": 9,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a road sign plated in mirror metal",
+    "memoryPalace": {
+      "atomicNumber": 45,
+      "room": "Dining Room",
+      "locus": "chair 4"
+    },
+    "linkingHint": "Picture a road sign plated in mirror metal colliding with the rail for 45, then anchor that scene on the chair 4 in the Dining Room."
+  },
+  {
+    "atomicNumber": 46,
+    "symbol": "Pd",
+    "name": "Palladium",
+    "group": 10,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a palace made of silver balloons",
+    "memoryPalace": {
+      "atomicNumber": 46,
+      "room": "Dining Room",
+      "locus": "sideboard"
+    },
+    "linkingHint": "Picture a palace made of silver balloons colliding with the roach for 46, then anchor that scene on the sideboard in the Dining Room."
+  },
+  {
+    "atomicNumber": 47,
+    "symbol": "Ag",
+    "name": "Silver",
+    "group": 11,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a silver sword cutting moonlight",
+    "memoryPalace": {
+      "atomicNumber": 47,
+      "room": "Dining Room",
+      "locus": "fruit bowl"
+    },
+    "linkingHint": "Picture a silver sword cutting moonlight colliding with the rock for 47, then anchor that scene on the fruit bowl in the Dining Room."
+  },
+  {
+    "atomicNumber": 48,
+    "symbol": "Cd",
+    "name": "Cadmium",
+    "group": 12,
+    "period": 5,
+    "category": "transition metal",
+    "defaultImage": "a cadet wearing a toxic yellow badge",
+    "memoryPalace": {
+      "atomicNumber": 48,
+      "room": "Dining Room",
+      "locus": "ceiling light"
+    },
+    "linkingHint": "Picture a cadet wearing a toxic yellow badge colliding with the roof for 48, then anchor that scene on the ceiling light in the Dining Room."
+  },
+  {
+    "atomicNumber": 49,
+    "symbol": "In",
+    "name": "Indium",
+    "group": 13,
+    "period": 5,
+    "category": "post-transition metal",
+    "defaultImage": "an India gate dripping indigo metal",
+    "memoryPalace": {
+      "atomicNumber": 49,
+      "room": "Dining Room",
+      "locus": "curtain"
+    },
+    "linkingHint": "Picture an India gate dripping indigo metal colliding with the rope for 49, then anchor that scene on the curtain in the Dining Room."
+  },
+  {
+    "atomicNumber": 50,
+    "symbol": "Sn",
+    "name": "Tin",
+    "group": 14,
+    "period": 5,
+    "category": "post-transition metal",
+    "defaultImage": "a crushed tin can marching like a soldier",
+    "memoryPalace": {
+      "atomicNumber": 50,
+      "room": "Dining Room",
+      "locus": "corner plant"
+    },
+    "linkingHint": "Picture a crushed tin can marching like a soldier colliding with the lace for 50, then anchor that scene on the corner plant in the Dining Room."
+  },
+  {
+    "atomicNumber": 51,
+    "symbol": "Sb",
+    "name": "Antimony",
+    "group": 15,
+    "period": 5,
+    "category": "metalloid",
+    "defaultImage": "a giant ant preaching from a podium",
+    "memoryPalace": {
+      "atomicNumber": 51,
+      "room": "Bathroom",
+      "locus": "bath"
+    },
+    "linkingHint": "Picture a giant ant preaching from a podium colliding with the lad for 51, then anchor that scene on the bath in the Bathroom."
+  },
+  {
+    "atomicNumber": 52,
+    "symbol": "Te",
+    "name": "Tellurium",
+    "group": 16,
+    "period": 5,
+    "category": "metalloid",
+    "defaultImage": "a telephone wrapped in glittering dust",
+    "memoryPalace": {
+      "atomicNumber": 52,
+      "room": "Bathroom",
+      "locus": "shower"
+    },
+    "linkingHint": "Picture a telephone wrapped in glittering dust colliding with the lion for 52, then anchor that scene on the shower in the Bathroom."
+  },
+  {
+    "atomicNumber": 53,
+    "symbol": "I",
+    "name": "Iodine",
+    "group": 17,
+    "period": 5,
+    "category": "halogen",
+    "defaultImage": "a purple iodine bottle painting a throat",
+    "memoryPalace": {
+      "atomicNumber": 53,
+      "room": "Bathroom",
+      "locus": "toilet"
+    },
+    "linkingHint": "Picture a purple iodine bottle painting a throat colliding with the lime for 53, then anchor that scene on the toilet in the Bathroom."
+  },
+  {
+    "atomicNumber": 54,
+    "symbol": "Xe",
+    "name": "Xenon",
+    "group": 18,
+    "period": 5,
+    "category": "noble gas",
+    "defaultImage": "a xenon car headlamp blasting white beams",
+    "memoryPalace": {
+      "atomicNumber": 54,
+      "room": "Bathroom",
+      "locus": "sink"
+    },
+    "linkingHint": "Picture a xenon car headlamp blasting white beams colliding with the lure for 54, then anchor that scene on the sink in the Bathroom."
+  },
+  {
+    "atomicNumber": 55,
+    "symbol": "Cs",
+    "name": "Caesium",
+    "group": 1,
+    "period": 6,
+    "category": "alkali metal",
+    "defaultImage": "a Caesar crown exploding in violet flame",
+    "memoryPalace": {
+      "atomicNumber": 55,
+      "room": "Bathroom",
+      "locus": "mirror cabinet"
+    },
+    "linkingHint": "Picture a Caesar crown exploding in violet flame colliding with the lily for 55, then anchor that scene on the mirror cabinet in the Bathroom."
+  },
+  {
+    "atomicNumber": 56,
+    "symbol": "Ba",
+    "name": "Barium",
+    "group": 2,
+    "period": 6,
+    "category": "alkaline earth metal",
+    "defaultImage": "a heavy barrel labeled barium rolling downhill",
+    "memoryPalace": {
+      "atomicNumber": 56,
+      "room": "Bathroom",
+      "locus": "towel rail"
+    },
+    "linkingHint": "Picture a heavy barrel labeled barium rolling downhill colliding with the leech for 56, then anchor that scene on the towel rail in the Bathroom."
+  },
+  {
+    "atomicNumber": 57,
+    "symbol": "La",
+    "name": "Lanthanum",
+    "group": 3,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a lantern dripping silver fire",
+    "memoryPalace": {
+      "atomicNumber": 57,
+      "room": "Bathroom",
+      "locus": "mat"
+    },
+    "linkingHint": "Picture a lantern dripping silver fire colliding with the log for 57, then anchor that scene on the mat in the Bathroom."
+  },
+  {
+    "atomicNumber": 58,
+    "symbol": "Ce",
+    "name": "Cerium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a cereal bowl sparkling with rare-earth dust",
+    "memoryPalace": {
+      "atomicNumber": 58,
+      "room": "Bathroom",
+      "locus": "shelf"
+    },
+    "linkingHint": "Picture a cereal bowl sparkling with rare-earth dust colliding with the lava for 58, then anchor that scene on the shelf in the Bathroom."
+  },
+  {
+    "atomicNumber": 59,
+    "symbol": "Pr",
+    "name": "Praseodymium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a praying mantis wearing green goggles",
+    "memoryPalace": {
+      "atomicNumber": 59,
+      "room": "Bathroom",
+      "locus": "window ledge"
+    },
+    "linkingHint": "Picture a praying mantis wearing green goggles colliding with the lip for 59, then anchor that scene on the window ledge in the Bathroom."
+  },
+  {
+    "atomicNumber": 60,
+    "symbol": "Nd",
+    "name": "Neodymium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a neon magnet pulling nails through the air",
+    "memoryPalace": {
+      "atomicNumber": 60,
+      "room": "Bathroom",
+      "locus": "door"
+    },
+    "linkingHint": "Picture a neon magnet pulling nails through the air colliding with the cheese for 60, then anchor that scene on the door in the Bathroom."
+  },
+  {
+    "atomicNumber": 61,
+    "symbol": "Pm",
+    "name": "Promethium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "Prometheus stealing a glowing blue fire cube",
+    "memoryPalace": {
+      "atomicNumber": 61,
+      "room": "Main Bedroom",
+      "locus": "bed"
+    },
+    "linkingHint": "Picture Prometheus stealing a glowing blue fire cube colliding with the sheet for 61, then anchor that scene on the bed in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 62,
+    "symbol": "Sm",
+    "name": "Samarium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a samurai swinging a rare-earth katana",
+    "memoryPalace": {
+      "atomicNumber": 62,
+      "room": "Main Bedroom",
+      "locus": "pillow"
+    },
+    "linkingHint": "Picture a samurai swinging a rare-earth katana colliding with the chain for 62, then anchor that scene on the pillow in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 63,
+    "symbol": "Eu",
+    "name": "Europium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a glowing map of Europe throwing red sparks",
+    "memoryPalace": {
+      "atomicNumber": 63,
+      "room": "Main Bedroom",
+      "locus": "wardrobe"
+    },
+    "linkingHint": "Picture a glowing map of Europe throwing red sparks colliding with the jam for 63, then anchor that scene on the wardrobe in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 64,
+    "symbol": "Gd",
+    "name": "Gadolinium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a gadget lizard covered in MRI coils",
+    "memoryPalace": {
+      "atomicNumber": 64,
+      "room": "Main Bedroom",
+      "locus": "dresser"
+    },
+    "linkingHint": "Picture a gadget lizard covered in MRI coils colliding with the chair for 64, then anchor that scene on the dresser in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 65,
+    "symbol": "Tb",
+    "name": "Terbium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a turbo green tiger roaring flames",
+    "memoryPalace": {
+      "atomicNumber": 65,
+      "room": "Main Bedroom",
+      "locus": "mirror"
+    },
+    "linkingHint": "Picture a turbo green tiger roaring flames colliding with the jelly for 65, then anchor that scene on the mirror in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 66,
+    "symbol": "Dy",
+    "name": "Dysprosium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a dice pro juggling black cubes",
+    "memoryPalace": {
+      "atomicNumber": 66,
+      "room": "Main Bedroom",
+      "locus": "lamp"
+    },
+    "linkingHint": "Picture a dice pro juggling black cubes colliding with the judge for 66, then anchor that scene on the lamp in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 67,
+    "symbol": "Ho",
+    "name": "Holmium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a whole mummy wrapped in magnetic ribbon",
+    "memoryPalace": {
+      "atomicNumber": 67,
+      "room": "Main Bedroom",
+      "locus": "window"
+    },
+    "linkingHint": "Picture a whole mummy wrapped in magnetic ribbon colliding with the chalk for 67, then anchor that scene on the window in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 68,
+    "symbol": "Er",
+    "name": "Erbium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a purple herb bubbling in a flask",
+    "memoryPalace": {
+      "atomicNumber": 68,
+      "room": "Main Bedroom",
+      "locus": "chair"
+    },
+    "linkingHint": "Picture a purple herb bubbling in a flask colliding with the chef for 68, then anchor that scene on the chair in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 69,
+    "symbol": "Tm",
+    "name": "Thulium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a thumb made of blue metal tapping a drum",
+    "memoryPalace": {
+      "atomicNumber": 69,
+      "room": "Main Bedroom",
+      "locus": "laundry basket"
+    },
+    "linkingHint": "Picture a thumb made of blue metal tapping a drum colliding with the ship for 69, then anchor that scene on the laundry basket in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 70,
+    "symbol": "Yb",
+    "name": "Ytterbium",
+    "group": null,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a bitter berry turning silver on your tongue",
+    "memoryPalace": {
+      "atomicNumber": 70,
+      "room": "Main Bedroom",
+      "locus": "door"
+    },
+    "linkingHint": "Picture a bitter berry turning silver on your tongue colliding with the case for 70, then anchor that scene on the door in the Main Bedroom."
+  },
+  {
+    "atomicNumber": 71,
+    "symbol": "Lu",
+    "name": "Lutetium",
+    "group": 3,
+    "period": 6,
+    "category": "lanthanide",
+    "defaultImage": "a lute made of shining glass",
+    "memoryPalace": {
+      "atomicNumber": 71,
+      "room": "Study",
+      "locus": "desk"
+    },
+    "linkingHint": "Picture a lute made of shining glass colliding with the cat for 71, then anchor that scene on the desk in the Study."
+  },
+  {
+    "atomicNumber": 72,
+    "symbol": "Hf",
+    "name": "Hafnium",
+    "group": 4,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "half a shield blocking reactor sparks",
+    "memoryPalace": {
+      "atomicNumber": 72,
+      "room": "Study",
+      "locus": "laptop"
+    },
+    "linkingHint": "Picture half a shield blocking reactor sparks colliding with the coin for 72, then anchor that scene on the laptop in the Study."
+  },
+  {
+    "atomicNumber": 73,
+    "symbol": "Ta",
+    "name": "Tantalum",
+    "group": 5,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "a tantalizing golden apple hanging just out of reach",
+    "memoryPalace": {
+      "atomicNumber": 73,
+      "room": "Study",
+      "locus": "chair"
+    },
+    "linkingHint": "Picture a tantalizing golden apple hanging just out of reach colliding with the comb for 73, then anchor that scene on the chair in the Study."
+  },
+  {
+    "atomicNumber": 74,
+    "symbol": "W",
+    "name": "Tungsten",
+    "group": 6,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "a tungsten lightbulb with an unbreakable filament",
+    "memoryPalace": {
+      "atomicNumber": 74,
+      "room": "Study",
+      "locus": "books"
+    },
+    "linkingHint": "Picture a tungsten lightbulb with an unbreakable filament colliding with the car for 74, then anchor that scene on the books in the Study."
+  },
+  {
+    "atomicNumber": 75,
+    "symbol": "Re",
+    "name": "Rhenium",
+    "group": 7,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "a rain cloud dropping metal coins",
+    "memoryPalace": {
+      "atomicNumber": 75,
+      "room": "Study",
+      "locus": "printer"
+    },
+    "linkingHint": "Picture a rain cloud dropping metal coins colliding with the coil for 75, then anchor that scene on the printer in the Study."
+  },
+  {
+    "atomicNumber": 76,
+    "symbol": "Os",
+    "name": "Osmium",
+    "group": 8,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "a heavy osmosis pump sucking blue liquid",
+    "memoryPalace": {
+      "atomicNumber": 76,
+      "room": "Study",
+      "locus": "whiteboard"
+    },
+    "linkingHint": "Picture a heavy osmosis pump sucking blue liquid colliding with the cage for 76, then anchor that scene on the whiteboard in the Study."
+  },
+  {
+    "atomicNumber": 77,
+    "symbol": "Ir",
+    "name": "Iridium",
+    "group": 9,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "an iridescent rainbow hammer",
+    "memoryPalace": {
+      "atomicNumber": 77,
+      "room": "Study",
+      "locus": "lamp"
+    },
+    "linkingHint": "Picture an iridescent rainbow hammer colliding with the cake for 77, then anchor that scene on the lamp in the Study."
+  },
+  {
+    "atomicNumber": 78,
+    "symbol": "Pt",
+    "name": "Platinum",
+    "group": 10,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "a platinum record spinning on ice",
+    "memoryPalace": {
+      "atomicNumber": 78,
+      "room": "Study",
+      "locus": "drawer"
+    },
+    "linkingHint": "Picture a platinum record spinning on ice colliding with the cave for 78, then anchor that scene on the drawer in the Study."
+  },
+  {
+    "atomicNumber": 79,
+    "symbol": "Au",
+    "name": "Gold",
+    "group": 11,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "a mountain of gold bars glowing warm",
+    "memoryPalace": {
+      "atomicNumber": 79,
+      "room": "Study",
+      "locus": "shelf"
+    },
+    "linkingHint": "Picture a mountain of gold bars glowing warm colliding with the cab for 79, then anchor that scene on the shelf in the Study."
+  },
+  {
+    "atomicNumber": 80,
+    "symbol": "Hg",
+    "name": "Mercury",
+    "group": 12,
+    "period": 6,
+    "category": "transition metal",
+    "defaultImage": "a liquid silver thermometer snake",
+    "memoryPalace": {
+      "atomicNumber": 80,
+      "room": "Study",
+      "locus": "window"
+    },
+    "linkingHint": "Picture a liquid silver thermometer snake colliding with the face for 80, then anchor that scene on the window in the Study."
+  },
+  {
+    "atomicNumber": 81,
+    "symbol": "Tl",
+    "name": "Thallium",
+    "group": 13,
+    "period": 6,
+    "category": "post-transition metal",
+    "defaultImage": "a tall alien wearing a poison cape",
+    "memoryPalace": {
+      "atomicNumber": 81,
+      "room": "Garage",
+      "locus": "garage door"
+    },
+    "linkingHint": "Picture a tall alien wearing a poison cape colliding with the fat for 81, then anchor that scene on the garage door in the Garage."
+  },
+  {
+    "atomicNumber": 82,
+    "symbol": "Pb",
+    "name": "Lead",
+    "group": 14,
+    "period": 6,
+    "category": "post-transition metal",
+    "defaultImage": "a lead pencil as heavy as an anvil",
+    "memoryPalace": {
+      "atomicNumber": 82,
+      "room": "Garage",
+      "locus": "toolbox"
+    },
+    "linkingHint": "Picture a lead pencil as heavy as an anvil colliding with the fan for 82, then anchor that scene on the toolbox in the Garage."
+  },
+  {
+    "atomicNumber": 83,
+    "symbol": "Bi",
+    "name": "Bismuth",
+    "group": 15,
+    "period": 6,
+    "category": "post-transition metal",
+    "defaultImage": "a rainbow bismuth crystal staircase",
+    "memoryPalace": {
+      "atomicNumber": 83,
+      "room": "Garage",
+      "locus": "workbench"
+    },
+    "linkingHint": "Picture a rainbow bismuth crystal staircase colliding with the foam for 83, then anchor that scene on the workbench in the Garage."
+  },
+  {
+    "atomicNumber": 84,
+    "symbol": "Po",
+    "name": "Polonium",
+    "group": 16,
+    "period": 6,
+    "category": "post-transition metal",
+    "defaultImage": "a polo player hitting radioactive marbles",
+    "memoryPalace": {
+      "atomicNumber": 84,
+      "room": "Garage",
+      "locus": "bike"
+    },
+    "linkingHint": "Picture a polo player hitting radioactive marbles colliding with the fire for 84, then anchor that scene on the bike in the Garage."
+  },
+  {
+    "atomicNumber": 85,
+    "symbol": "At",
+    "name": "Astatine",
+    "group": 17,
+    "period": 6,
+    "category": "halogen",
+    "defaultImage": "an asteroid wrapped in purple halogen smoke",
+    "memoryPalace": {
+      "atomicNumber": 85,
+      "room": "Garage",
+      "locus": "shelf"
+    },
+    "linkingHint": "Picture an asteroid wrapped in purple halogen smoke colliding with the file for 85, then anchor that scene on the shelf in the Garage."
+  },
+  {
+    "atomicNumber": 86,
+    "symbol": "Rn",
+    "name": "Radon",
+    "group": 18,
+    "period": 6,
+    "category": "noble gas",
+    "defaultImage": "a radioactive radon cave filled with invisible gas",
+    "memoryPalace": {
+      "atomicNumber": 86,
+      "room": "Garage",
+      "locus": "paint cans"
+    },
+    "linkingHint": "Picture a radioactive radon cave filled with invisible gas colliding with the fish for 86, then anchor that scene on the paint cans in the Garage."
+  },
+  {
+    "atomicNumber": 87,
+    "symbol": "Fr",
+    "name": "Francium",
+    "group": 1,
+    "period": 7,
+    "category": "alkali metal",
+    "defaultImage": "a French crown bursting into flame",
+    "memoryPalace": {
+      "atomicNumber": 87,
+      "room": "Garage",
+      "locus": "ladder"
+    },
+    "linkingHint": "Picture a French crown bursting into flame colliding with the fork for 87, then anchor that scene on the ladder in the Garage."
+  },
+  {
+    "atomicNumber": 88,
+    "symbol": "Ra",
+    "name": "Radium",
+    "group": 2,
+    "period": 7,
+    "category": "alkaline earth metal",
+    "defaultImage": "a radiant clock glowing green in the dark",
+    "memoryPalace": {
+      "atomicNumber": 88,
+      "room": "Garage",
+      "locus": "socket"
+    },
+    "linkingHint": "Picture a radiant clock glowing green in the dark colliding with the fife for 88, then anchor that scene on the socket in the Garage."
+  },
+  {
+    "atomicNumber": 89,
+    "symbol": "Ac",
+    "name": "Actinium",
+    "group": 3,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "an actor glowing under radioactive spotlights",
+    "memoryPalace": {
+      "atomicNumber": 89,
+      "room": "Garage",
+      "locus": "storage box"
+    },
+    "linkingHint": "Picture an actor glowing under radioactive spotlights colliding with the vape for 89, then anchor that scene on the storage box in the Garage."
+  },
+  {
+    "atomicNumber": 90,
+    "symbol": "Th",
+    "name": "Thorium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "Thor swinging a reactor hammer",
+    "memoryPalace": {
+      "atomicNumber": 90,
+      "room": "Garage",
+      "locus": "side door"
+    },
+    "linkingHint": "Picture Thor swinging a reactor hammer colliding with the bus for 90, then anchor that scene on the side door in the Garage."
+  },
+  {
+    "atomicNumber": 91,
+    "symbol": "Pa",
+    "name": "Protactinium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "a proton actor in a silver costume",
+    "memoryPalace": {
+      "atomicNumber": 91,
+      "room": "Garden",
+      "locus": "patio"
+    },
+    "linkingHint": "Picture a proton actor in a silver costume colliding with the bat for 91, then anchor that scene on the patio in the Garden."
+  },
+  {
+    "atomicNumber": 92,
+    "symbol": "U",
+    "name": "Uranium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "a uranium drum glowing toxic green",
+    "memoryPalace": {
+      "atomicNumber": 92,
+      "room": "Garden",
+      "locus": "bbq"
+    },
+    "linkingHint": "Picture a uranium drum glowing toxic green colliding with the bone for 92, then anchor that scene on the bbq in the Garden."
+  },
+  {
+    "atomicNumber": 93,
+    "symbol": "Np",
+    "name": "Neptunium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "Neptune holding a radioactive trident",
+    "memoryPalace": {
+      "atomicNumber": 93,
+      "room": "Garden",
+      "locus": "grass"
+    },
+    "linkingHint": "Picture Neptune holding a radioactive trident colliding with the beam for 93, then anchor that scene on the grass in the Garden."
+  },
+  {
+    "atomicNumber": 94,
+    "symbol": "Pu",
+    "name": "Plutonium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "Pluto the planet forged into a bomb core",
+    "memoryPalace": {
+      "atomicNumber": 94,
+      "room": "Garden",
+      "locus": "tree"
+    },
+    "linkingHint": "Picture Pluto the planet forged into a bomb core colliding with the bear for 94, then anchor that scene on the tree in the Garden."
+  },
+  {
+    "atomicNumber": 95,
+    "symbol": "Am",
+    "name": "Americium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "a glowing map of America like a badge",
+    "memoryPalace": {
+      "atomicNumber": 95,
+      "room": "Garden",
+      "locus": "shed"
+    },
+    "linkingHint": "Picture a glowing map of America like a badge colliding with the bell for 95, then anchor that scene on the shed in the Garden."
+  },
+  {
+    "atomicNumber": 96,
+    "symbol": "Cm",
+    "name": "Curium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "Marie Curie stirring a bright vial",
+    "memoryPalace": {
+      "atomicNumber": 96,
+      "room": "Garden",
+      "locus": "fence"
+    },
+    "linkingHint": "Picture Marie Curie stirring a bright vial colliding with the beach for 96, then anchor that scene on the fence in the Garden."
+  },
+  {
+    "atomicNumber": 97,
+    "symbol": "Bk",
+    "name": "Berkelium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "a Berkeley bear in a lab coat",
+    "memoryPalace": {
+      "atomicNumber": 97,
+      "room": "Garden",
+      "locus": "swing"
+    },
+    "linkingHint": "Picture a Berkeley bear in a lab coat colliding with the book for 97, then anchor that scene on the swing in the Garden."
+  },
+  {
+    "atomicNumber": 98,
+    "symbol": "Cf",
+    "name": "Californium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "California surfboards glowing in a reactor wave",
+    "memoryPalace": {
+      "atomicNumber": 98,
+      "room": "Garden",
+      "locus": "bird feeder"
+    },
+    "linkingHint": "Picture California surfboards glowing in a reactor wave colliding with the beef for 98, then anchor that scene on the bird feeder in the Garden."
+  },
+  {
+    "atomicNumber": 99,
+    "symbol": "Es",
+    "name": "Einsteinium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "Einstein with wild hair and a green test tube",
+    "memoryPalace": {
+      "atomicNumber": 99,
+      "room": "Garden",
+      "locus": "pond"
+    },
+    "linkingHint": "Picture Einstein with wild hair and a green test tube colliding with the pipe for 99, then anchor that scene on the pond in the Garden."
+  },
+  {
+    "atomicNumber": 100,
+    "symbol": "Fm",
+    "name": "Fermium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "a fermion farmer pushing a glowing plough",
+    "memoryPalace": {
+      "atomicNumber": 100,
+      "room": "Garden",
+      "locus": "gate"
+    },
+    "linkingHint": "Picture a fermion farmer pushing a glowing plough colliding with the S.O.S. flare for 100, then anchor that scene on the gate in the Garden."
+  },
+  {
+    "atomicNumber": 101,
+    "symbol": "Md",
+    "name": "Mendelevium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "Mendeleev writing on a blazing chalkboard",
+    "memoryPalace": {
+      "atomicNumber": 101,
+      "room": "Supermarket",
+      "locus": "entrance"
+    },
+    "linkingHint": "Picture Mendeleev writing on a blazing chalkboard colliding with the seed for 101, then anchor that scene on the entrance in the Supermarket."
+  },
+  {
+    "atomicNumber": 102,
+    "symbol": "No",
+    "name": "Nobelium",
+    "group": null,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "a Nobel medal floating in purple gas",
+    "memoryPalace": {
+      "atomicNumber": 102,
+      "room": "Supermarket",
+      "locus": "trolleys"
+    },
+    "linkingHint": "Picture a Nobel medal floating in purple gas colliding with the sun for 102, then anchor that scene on the trolleys in the Supermarket."
+  },
+  {
+    "atomicNumber": 103,
+    "symbol": "Lr",
+    "name": "Lawrencium",
+    "group": 3,
+    "period": 7,
+    "category": "actinide",
+    "defaultImage": "a lawyer hammering a luminous gavel",
+    "memoryPalace": {
+      "atomicNumber": 103,
+      "room": "Supermarket",
+      "locus": "fruit aisle"
+    },
+    "linkingHint": "Picture a lawyer hammering a luminous gavel colliding with the sumo for 103, then anchor that scene on the fruit aisle in the Supermarket."
+  },
+  {
+    "atomicNumber": 104,
+    "symbol": "Rf",
+    "name": "Rutherfordium",
+    "group": 4,
+    "period": 7,
+    "category": "transition metal",
+    "defaultImage": "Rutherford smashing atoms with a golden bat",
+    "memoryPalace": {
+      "atomicNumber": 104,
+      "room": "Supermarket",
+      "locus": "bakery"
+    },
+    "linkingHint": "Picture Rutherford smashing atoms with a golden bat colliding with the sewer for 104, then anchor that scene on the bakery in the Supermarket."
+  },
+  {
+    "atomicNumber": 105,
+    "symbol": "Db",
+    "name": "Dubnium",
+    "group": 5,
+    "period": 7,
+    "category": "transition metal",
+    "defaultImage": "a double-headed hammer splitting a nucleus",
+    "memoryPalace": {
+      "atomicNumber": 105,
+      "room": "Supermarket",
+      "locus": "milk fridge"
+    },
+    "linkingHint": "Picture a double-headed hammer splitting a nucleus colliding with the sail for 105, then anchor that scene on the milk fridge in the Supermarket."
+  },
+  {
+    "atomicNumber": 106,
+    "symbol": "Sg",
+    "name": "Seaborgium",
+    "group": 6,
+    "period": 7,
+    "category": "transition metal",
+    "defaultImage": "a steel sea-borg surfacing from dark water",
+    "memoryPalace": {
+      "atomicNumber": 106,
+      "room": "Supermarket",
+      "locus": "freezer"
+    },
+    "linkingHint": "Picture a steel sea-borg surfacing from dark water colliding with the sausage for 106, then anchor that scene on the freezer in the Supermarket."
+  },
+  {
+    "atomicNumber": 107,
+    "symbol": "Bh",
+    "name": "Bohrium",
+    "group": 7,
+    "period": 7,
+    "category": "transition metal",
+    "defaultImage": "a boar wearing a reactor helmet",
+    "memoryPalace": {
+      "atomicNumber": 107,
+      "room": "Supermarket",
+      "locus": "checkout"
+    },
+    "linkingHint": "Picture a boar wearing a reactor helmet colliding with the sock for 107, then anchor that scene on the checkout in the Supermarket."
+  },
+  {
+    "atomicNumber": 108,
+    "symbol": "Hs",
+    "name": "Hassium",
+    "group": 8,
+    "period": 7,
+    "category": "transition metal",
+    "defaultImage": "a hissing horse stamped with a metal H",
+    "memoryPalace": {
+      "atomicNumber": 108,
+      "room": "Supermarket",
+      "locus": "receipt printer"
+    },
+    "linkingHint": "Picture a hissing horse stamped with a metal H colliding with the sofa for 108, then anchor that scene on the receipt printer in the Supermarket."
+  },
+  {
+    "atomicNumber": 109,
+    "symbol": "Mt",
+    "name": "Meitnerium",
+    "group": 9,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "Lise Meitner holding a starry atom orb",
+    "memoryPalace": {
+      "atomicNumber": 109,
+      "room": "Supermarket",
+      "locus": "exit"
+    },
+    "linkingHint": "Picture Lise Meitner holding a starry atom orb colliding with the soap for 109, then anchor that scene on the exit in the Supermarket."
+  },
+  {
+    "atomicNumber": 110,
+    "symbol": "Ds",
+    "name": "Darmstadtium",
+    "group": 10,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "a dart stadium made of silver metal",
+    "memoryPalace": {
+      "atomicNumber": 110,
+      "room": "Supermarket",
+      "locus": "car park"
+    },
+    "linkingHint": "Picture a dart stadium made of silver metal colliding with the toes for 110, then anchor that scene on the car park in the Supermarket."
+  },
+  {
+    "atomicNumber": 111,
+    "symbol": "Rg",
+    "name": "Roentgenium",
+    "group": 11,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "an X-ray gun revealing glowing bones",
+    "memoryPalace": {
+      "atomicNumber": 111,
+      "room": "Train Station",
+      "locus": "ticket gate"
+    },
+    "linkingHint": "Picture an X-ray gun revealing glowing bones colliding with the tot for 111, then anchor that scene on the ticket gate in the Train Station."
+  },
+  {
+    "atomicNumber": 112,
+    "symbol": "Cn",
+    "name": "Copernicium",
+    "group": 12,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "Copernicus spinning planets on his fingertip",
+    "memoryPalace": {
+      "atomicNumber": 112,
+      "room": "Train Station",
+      "locus": "platform sign"
+    },
+    "linkingHint": "Picture Copernicus spinning planets on his fingertip colliding with the tin for 112, then anchor that scene on the platform sign in the Train Station."
+  },
+  {
+    "atomicNumber": 113,
+    "symbol": "Nh",
+    "name": "Nihonium",
+    "group": 13,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "a neon Japan gate floating in mist",
+    "memoryPalace": {
+      "atomicNumber": 113,
+      "room": "Train Station",
+      "locus": "bench"
+    },
+    "linkingHint": "Picture a neon Japan gate floating in mist colliding with the tomb for 113, then anchor that scene on the bench in the Train Station."
+  },
+  {
+    "atomicNumber": 114,
+    "symbol": "Fl",
+    "name": "Flerovium",
+    "group": 14,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "a flower rover crawling over a nucleus",
+    "memoryPalace": {
+      "atomicNumber": 114,
+      "room": "Train Station",
+      "locus": "departure board"
+    },
+    "linkingHint": "Picture a flower rover crawling over a nucleus colliding with the tire for 114, then anchor that scene on the departure board in the Train Station."
+  },
+  {
+    "atomicNumber": 115,
+    "symbol": "Mc",
+    "name": "Moscovium",
+    "group": 15,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "a Moscow onion dome glowing red",
+    "memoryPalace": {
+      "atomicNumber": 115,
+      "room": "Train Station",
+      "locus": "track edge"
+    },
+    "linkingHint": "Picture a Moscow onion dome glowing red colliding with the tail for 115, then anchor that scene on the track edge in the Train Station."
+  },
+  {
+    "atomicNumber": 116,
+    "symbol": "Lv",
+    "name": "Livermorium",
+    "group": 16,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "a liver-shaped meteor dripping cosmic fire",
+    "memoryPalace": {
+      "atomicNumber": 116,
+      "room": "Train Station",
+      "locus": "stairs"
+    },
+    "linkingHint": "Picture a liver-shaped meteor dripping cosmic fire colliding with the dish for 116, then anchor that scene on the stairs in the Train Station."
+  },
+  {
+    "atomicNumber": 117,
+    "symbol": "Ts",
+    "name": "Tennessine",
+    "group": 17,
+    "period": 7,
+    "category": "unknown",
+    "defaultImage": "a Tennessee guitar crackling with green lightning",
+    "memoryPalace": {
+      "atomicNumber": 117,
+      "room": "Train Station",
+      "locus": "lift"
+    },
+    "linkingHint": "Picture a Tennessee guitar crackling with green lightning colliding with the tack for 117, then anchor that scene on the lift in the Train Station."
+  },
+  {
+    "atomicNumber": 118,
+    "symbol": "Og",
+    "name": "Oganesson",
+    "group": 18,
+    "period": 7,
+    "category": "noble gas",
+    "defaultImage": "a giant ogre noble gas sphere swallowing the room",
+    "memoryPalace": {
+      "atomicNumber": 118,
+      "room": "Train Station",
+      "locus": "coffee kiosk"
+    },
+    "linkingHint": "Picture a giant ogre noble gas sphere swallowing the room colliding with the dove for 118, then anchor that scene on the coffee kiosk in the Train Station."
+  }
+]
