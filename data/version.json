@@ -1,6 +1,17 @@
 {
-  "currentVersion": "0.2.0",
+  "currentVersion": "0.3.0",
   "releasedAt": "2026-04-08",
-  "description": "Added richer daily resources, daily mini tests, family-share Firestore model, and improved day-by-day navigation.",
-  "archive": []
+  "description": "Google-inspired UI refresh, clickable day resources, daily mini tests, Firebase auth scaffold for anonymous plus Google sign-in, and 118 SVG illustration assets.",
+  "archive": [
+    {
+      "version": "0.2.0",
+      "path": "archive/v0.2.0/",
+      "description": "Initial daily plan and Firebase scaffolding update."
+    },
+    {
+      "version": "0.1.0",
+      "path": "archive/v0.1.0/",
+      "description": "Initial offline-first release."
+    }
+  ]
 }

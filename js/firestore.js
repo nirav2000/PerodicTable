@@ -8,55 +8,88 @@ export const firebaseConfig = {
   measurementId: 'G-ZV75TTS3TN'
 };
 
-export function futureFirestoreNotes() {
-  return `import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js';
-import { getAuth, signInAnonymously, GoogleAuthProvider, signInWithPopup, linkWithPopup } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js';
-import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js';
+let auth;
+let db;
+let initialized = false;
 
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
-const google = new GoogleAuthProvider();
+export async function initFirebaseAuth(onStatus) {
+  if (initialized) return { auth, db };
+  const [{ initializeApp }, { getAuth, signInAnonymously, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, linkWithPopup, signOut }, { getFirestore, doc, getDoc, setDoc, serverTimestamp }] = await Promise.all([
+    import('https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js'),
+    import('https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js'),
+    import('https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js')
+  ]);
 
-export async function ensureAnonymousSession() {
-  if (!auth.currentUser) await signInAnonymously(auth);
-  return auth.currentUser;
+  const app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+  db = getFirestore(app);
+  initialized = true;
+
+  const provider = new GoogleAuthProvider();
+
+  async function ensureAnonymous() {
+    if (!auth.currentUser) await signInAnonymously(auth);
+  }
+
+  async function upgradeToGoogle() {
+    if (!auth.currentUser) {
+      await signInWithPopup(auth, provider);
+      return;
+    }
+    if (auth.currentUser.isAnonymous) {
+      await linkWithPopup(auth.currentUser, provider);
+    } else {
+      await signInWithPopup(auth, provider);
+    }
+  }
+
+  async function saveSharedState(householdId, profileId, payload) {
+    if (!db || !auth.currentUser) return;
+    const householdRef = doc(db, 'households', householdId);
+    const profileRef = doc(db, 'households', householdId, 'profiles', profileId);
+    await setDoc(householdRef, {
+      updatedAt: serverTimestamp(),
+      updatedBy: auth.currentUser.uid,
+      app: 'periodic-table-palace'
+    }, { merge: true });
+    await setDoc(profileRef, {
+      ...payload,
+      updatedAt: serverTimestamp(),
+      ownerUid: auth.currentUser.uid
+    }, { merge: true });
+  }
+
+  async function loadSharedState(householdId, profileId) {
+    if (!db) return null;
+    const profileRef = doc(db, 'households', householdId, 'profiles', profileId);
+    const snap = await getDoc(profileRef);
+    return snap.exists() ? snap.data() : null;
+  }
+
+  onAuthStateChanged(auth, (user) => {
+    onStatus?.({
+      uid: user?.uid || null,
+      isAnonymous: !!user?.isAnonymous,
+      provider: user?.providerData?.[0]?.providerId || 'anonymous',
+      displayName: user?.displayName || 'Anonymous learner',
+      ensureAnonymous,
+      upgradeToGoogle,
+      signOut: () => signOut(auth),
+      saveSharedState,
+      loadSharedState
+    });
+  });
+
+  await ensureAnonymous();
+  return { auth, db };
 }
 
-export async function upgradeToGoogle() {
-  const user = await ensureAnonymousSession();
-  return user.isAnonymous ? linkWithPopup(user, google) : signInWithPopup(auth, google);
-}
-
-// Shared family model
-// households/{householdId}
-// households/{householdId}/profiles/{profileId}
-// households/{householdId}/profiles/{profileId}/snapshots/{timestamp}
-
-export async function saveHouseholdState(householdId, profileId, payload) {
-  await setDoc(doc(db, 'households', householdId), {
-    app: 'periodic-table-palace',
-    updatedAt: serverTimestamp()
-  }, { merge: true });
-
-  await setDoc(doc(db, 'households', householdId, 'profiles', profileId), {
-    ...payload,
-    updatedAt: serverTimestamp()
-  }, { merge: true });
-}
-
-export async function loadHouseholdState(householdId, profileId) {
-  const snap = await getDoc(doc(db, 'households', householdId, 'profiles', profileId));
-  return snap.exists() ? snap.data() : null;
-}`;
-}
-
-export function getFirestoreRequirements() {
+export function firestoreSetupSummary() {
   return [
-    'Enable Anonymous authentication in Firebase Auth.',
-    'Enable Google as a sign-in provider in Firebase Auth.',
-    'Create Firestore security rules for households and profiles.',
-    'Decide whether one household id is created by invitation code or manually entered.',
-    'Decide whether quiz scores sync automatically or only after pressing Sync.'
-  ];
+    'Firebase ready.',
+    'Auth flow: anonymous by default, optional Google upgrade.',
+    'Data model: households/{householdId}/profiles/{profileId}.',
+    'Suggested rules: allow read/write only for authenticated users who know the household id, or tighten further with household membership documents.',
+    'Still needed later: preferred household invitation flow.'
+  ].join('\n');
 }

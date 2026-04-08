@@ -7,116 +7,135 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <div>
-        <p class="eyebrow">Offline-first memory trainer</p>
-        <h1>Periodic Table Palace</h1>
-        <p class="hero-copy">
-          Build a personal 00-99 number-image system, customise vivid images for all 118 elements,
-          walk a full memory palace, and train with a 7-day intensive plan with daily mini tests.
-        </p>
-      </div>
-      <div class="hero-actions">
-        <button id="exportBtn" class="btn">Export JSON</button>
-        <label class="btn ghost upload-btn">Import JSON<input id="importInput" type="file" accept="application/json" hidden /></label>
-        <button id="resetBtn" class="btn ghost danger">Reset to defaults</button>
-      </div>
-    </header>
-
-    <nav class="tabbar" aria-label="App sections">
-      <button class="tab active" data-tab="overview">Overview</button>
-      <button class="tab" data-tab="numbers">00-99 system</button>
-      <button class="tab" data-tab="elements">118 elements</button>
-      <button class="tab" data-tab="palace">Memory palace</button>
-      <button class="tab" data-tab="plan">7-day plan</button>
-      <button class="tab" data-tab="settings">Settings</button>
-    </nav>
-
-    <main>
-      <section id="overview" class="tab-panel active">
-        <div class="grid two">
-          <article class="card stat-card">
-            <h2>How to link information</h2>
-            <ol class="steps">
-              <li><strong>Element image:</strong> turn the element into one vivid moving scene.</li>
-              <li><strong>Atomic number image:</strong> convert the number into your 00-99 cue.</li>
-              <li><strong>Collision:</strong> make both images interact absurdly.</li>
-              <li><strong>Locus:</strong> freeze the collision at a specific place in the palace.</li>
-              <li><strong>Recall loop:</strong> say number, symbol, name, image, and location aloud.</li>
-            </ol>
-          </article>
-          <article class="card">
-            <h2>Quick start examples</h2>
-            <div id="quickStart" class="grid"></div>
-          </article>
+    <div class="page-shell">
+      <header class="hero surface">
+        <div class="hero-copy-wrap">
+          <p class="eyebrow">Memory palace trainer</p>
+          <h1>Periodic Table Palace</h1>
+          <p class="hero-copy">Learn the periodic table with a vivid 00-99 system, exaggerated element scenes, a full 118-locus palace, daily drills, mini tests, and optional Firebase sync for the family.</p>
+          <div class="hero-actions">
+            <button id="exportBtn" class="btn primary">Export JSON</button>
+            <label class="btn ghost">Import JSON<input id="importInput" type="file" accept="application/json" hidden /></label>
+            <button id="resetBtn" class="btn ghost danger">Reset</button>
+          </div>
         </div>
-      </section>
+        <aside class="hero-panel surface-soft">
+          <p class="mini-title">Design direction</p>
+          <p class="muted">Inspired by the clean spacing, soft panels, and high-clarity hierarchy used across Google Developers ML guides.</p>
+          <div class="hero-points">
+            <span class="chip">iPhone</span>
+            <span class="chip">iPad</span>
+            <span class="chip">Desktop</span>
+            <span class="chip">GitHub Pages</span>
+          </div>
+        </aside>
+      </header>
 
-      <section id="numbers" class="tab-panel">
-        <div class="toolbar"><input id="numberSearch" placeholder="Search numbers, cues, or images" /></div>
-        <div id="numbersGrid" class="grid cards-grid"></div>
-      </section>
+      <nav class="tabbar surface" aria-label="App sections">
+        <button class="tab active" data-tab="overview">Overview</button>
+        <button class="tab" data-tab="numbers">00-99</button>
+        <button class="tab" data-tab="elements">Elements</button>
+        <button class="tab" data-tab="palace">Palace</button>
+        <button class="tab" data-tab="plan">7-day plan</button>
+        <button class="tab" data-tab="settings">Settings</button>
+      </nav>
 
-      <section id="elements" class="tab-panel">
-        <div class="toolbar"><input id="elementSearch" placeholder="Search by number, symbol, name, category, or image" /></div>
-        <div id="elementsGrid" class="grid cards-grid"></div>
-      </section>
+      <main>
+        <section id="overview" class="tab-panel active">
+          <div class="grid two">
+            <article class="surface card">
+              <h2>How to link each element</h2>
+              <ol class="steps">
+                <li><strong>Element scene:</strong> turn the element into one vivid moving image.</li>
+                <li><strong>Number cue:</strong> convert the atomic number into your 00-99 image.</li>
+                <li><strong>Collision:</strong> make the two scenes smash into each other.</li>
+                <li><strong>Locus:</strong> freeze that collision in a fixed palace location.</li>
+                <li><strong>Recall:</strong> say number, symbol, name, and location aloud.</li>
+              </ol>
+            </article>
+            <article class="surface card">
+              <h2>Quick start examples</h2>
+              <div id="quickStart" class="grid"></div>
+            </article>
+          </div>
+        </section>
 
-      <section id="palace" class="tab-panel">
-        <div class="grid two">
-          <article class="card">
-            <h2>Full 118-locus palace</h2>
-            <p class="muted">Twelve rooms, fixed loci, and all elements pre-linked so you can customise rather than build from scratch.</p>
-          </article>
-          <article class="card">
-            <h2>Palace training tip</h2>
-            <p>Walk each room forward, then backward. Then jump to random loci: “What lives on the kitchen sink?”</p>
-          </article>
-        </div>
-        <div id="palaceRooms" class="grid"></div>
-      </section>
+        <section id="numbers" class="tab-panel">
+          <div class="toolbar"><input id="numberSearch" placeholder="Search number cues or vivid images" /></div>
+          <div id="numbersGrid" class="cards-grid"></div>
+        </section>
 
-      <section id="plan" class="tab-panel">
-        <div class="grid two">
-          <article class="card">
-            <h2>7-day intensive plan</h2>
-            <p class="muted">Tap a day to open its resources and mini test.</p>
-            <div id="planGrid" class="grid"></div>
-          </article>
-          <article class="card">
-            <div id="dayDetail"></div>
-          </article>
-        </div>
-      </section>
+        <section id="elements" class="tab-panel">
+          <div class="toolbar"><input id="elementSearch" placeholder="Search by number, symbol, element, category, room, or vivid scene" /></div>
+          <div id="elementsGrid" class="cards-grid"></div>
+        </section>
 
-      <section id="settings" class="tab-panel">
-        <div class="grid two">
-          <article class="card">
-            <h2>Cloud sync roadmap</h2>
-            <p>Anonymous auth is the default. Google sign-in can be used later to preserve ownership or manage family access. Family sharing is modelled with a household id plus separate profiles.</p>
-            <pre id="firebaseSnippet" class="code-block"></pre>
-          </article>
-          <article class="card">
-            <h2>What Firestore will store</h2>
-            <ul class="steps compact">
-              <li><strong>Household</strong>: shared palace and version metadata</li>
-              <li><strong>Profiles</strong>: each family member's edits and quiz results</li>
-              <li><strong>Sessions</strong>: optional sync snapshots and timestamps</li>
-            </ul>
-            <div id="syncChecklist"></div>
-          </article>
-        </div>
-      </section>
-    </main>
+        <section id="palace" class="tab-panel">
+          <div class="grid two">
+            <article class="surface card">
+              <h2>Full 118-locus palace</h2>
+              <p class="muted">All 118 elements are pre-mapped into fixed rooms and loci so you can refine the imagery rather than start from scratch.</p>
+            </article>
+            <article class="surface card">
+              <h2>Walkthrough tip</h2>
+              <p class="muted">Run rooms forward, backward, then jump randomly: “What lives on the kitchen sink?” or “What is at the station kiosk?”</p>
+            </article>
+          </div>
+          <div id="palaceRooms" class="grid"></div>
+        </section>
 
-    <footer class="app-footer">
-      <span>Built for GitHub Pages · local-first</span>
-      <button id="versionButton" class="version-link" aria-haspopup="dialog">v0.0.0</button>
-    </footer>
+        <section id="plan" class="tab-panel">
+          <div class="grid two plan-layout">
+            <article class="surface card">
+              <h2>7-day intensive plan</h2>
+              <p class="muted">Tap any day card to open the resources and the mini test for that day.</p>
+              <div id="planGrid" class="grid"></div>
+            </article>
+            <article class="surface card sticky-detail">
+              <div id="dayDetail"></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="settings" class="tab-panel">
+          <div class="grid two">
+            <article class="surface card">
+              <h2>Firebase sync</h2>
+              <p class="muted">Anonymous auth starts immediately. Upgrade to Google sign-in whenever you want a durable household owner account.</p>
+              <div class="auth-actions">
+                <button id="anonBtn" class="btn">Start anonymous session</button>
+                <button id="googleBtn" class="btn primary">Upgrade with Google</button>
+                <button id="syncBtn" class="btn ghost">Sync this profile</button>
+              </div>
+              <div id="authStatus" class="notice"></div>
+              <pre id="firebaseSnippet" class="code-block"></pre>
+            </article>
+            <article class="surface card">
+              <h2>Family sharing model</h2>
+              <ul class="steps compact">
+                <li><strong>Household</strong>: one shared container for the family.</li>
+                <li><strong>Profiles</strong>: each person can keep their own edits and quiz scores.</li>
+                <li><strong>Current profile</strong>: <input id="profileInput" value="nirav" /></li>
+                <li><strong>Household id</strong>: <input id="householdInput" value="family-palace" /></li>
+              </ul>
+              <div id="syncChecklist" class="notice"></div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <span>Local-first · GitHub Pages ready</span>
+        <button id="versionButton" class="version-link">v...</button>
+      </footer>
+    </div>
 
     <dialog id="versionDialog" class="modal">
-      <article>
-        <div class="row between"><h2>Version history</h2><button id="closeVersionDialog" class="icon-btn" aria-label="Close">✕</button></div>
+      <article class="surface card">
+        <div class="row between">
+          <h2>Version details</h2>
+          <button id="closeVersionDialog" class="btn ghost">Close</button>
+        </div>
         <div id="versionDetails"></div>
       </article>
     </dialog>

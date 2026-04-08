@@ -2,126 +2,64 @@
   {
     "dayNumber": 1,
     "day": "Day 1",
-    "focus": "Learn number images 00-19, elements 1-20, and the first two palace rooms.",
-    "numberRange": [
-      0,
-      19
-    ],
-    "elementRange": [
-      1,
-      20
-    ],
-    "rooms": [
-      "Front Garden",
-      "Living Room"
-    ],
-    "drill": "Walk the first 20 loci forward, then name the element from the locus without looking."
+    "focus": "Learn 00-19 and elements 1-20. Build the Front Garden and Living Room. Start linking element scene + number cue + locus.",
+    "numberRange": [0, 19],
+    "elementRange": [1, 20],
+    "rooms": ["Front Garden", "Living Room"],
+    "drill": "Walk both rooms twice, then cover the list and recall from loci only."
   },
   {
     "dayNumber": 2,
     "day": "Day 2",
-    "focus": "Extend number images to 20-39 and add elements 21-40 in rooms 3 and 4.",
-    "numberRange": [
-      20,
-      39
-    ],
-    "elementRange": [
-      21,
-      40
-    ],
-    "rooms": [
-      "Kitchen",
-      "Bedroom"
-    ],
-    "drill": "Say atomic number, symbol, and name aloud for each new element."
+    "focus": "Learn 20-39 and elements 21-40. Add Kitchen and Bedroom. Do one slow pass and two fast passes.",
+    "numberRange": [20, 39],
+    "elementRange": [21, 40],
+    "rooms": ["Kitchen", "Bedroom"],
+    "drill": "Run a forward walk, then random jumps: atomic number to symbol and back."
   },
   {
     "dayNumber": 3,
     "day": "Day 3",
-    "focus": "Extend number images to 40-59 and add elements 41-60.",
-    "numberRange": [
-      40,
-      59
-    ],
-    "elementRange": [
-      41,
-      60
-    ],
-    "rooms": [
-      "Bathroom",
-      "Hallway"
-    ],
-    "drill": "Jump to random loci and recall both the element and the number cue."
+    "focus": "Learn 40-59 and elements 41-60. Add Bathroom and Hallway. Start saying number, symbol, name aloud.",
+    "numberRange": [40, 59],
+    "elementRange": [41, 60],
+    "rooms": ["Bathroom", "Hallway"],
+    "drill": "Use verbal recall after each locus to strengthen speed and pronunciation."
   },
   {
     "dayNumber": 4,
     "day": "Day 4",
-    "focus": "Extend number images to 60-79 and add elements 61-80.",
-    "numberRange": [
-      60,
-      79
-    ],
-    "elementRange": [
-      61,
-      80
-    ],
-    "rooms": [
-      "Office",
-      "Gym"
-    ],
-    "drill": "Start grouping by family: halogens, noble gases, alkali metals, lanthanides."
+    "focus": "Learn 60-79 and elements 61-80. Add Office and Gym. Notice families and patterns while keeping imagery vivid.",
+    "numberRange": [60, 79],
+    "elementRange": [61, 80],
+    "rooms": ["Office", "Gym"],
+    "drill": "Cluster by family: lanthanides, transition metals, halogens, noble gases."
   },
   {
     "dayNumber": 5,
     "day": "Day 5",
-    "focus": "Finish number images 80-99 and add elements 81-100.",
-    "numberRange": [
-      80,
-      99
-    ],
-    "elementRange": [
-      81,
-      100
-    ],
-    "rooms": [
-      "Supermarket",
-      "Park"
-    ],
-    "drill": "Run forward and backward recall drills and fix any weak images."
+    "focus": "Finish 80-99 and elements 81-100. Add Supermarket and Park. Start timed recall and mini quiz loops.",
+    "numberRange": [80, 99],
+    "elementRange": [81, 100],
+    "rooms": ["Supermarket", "Park"],
+    "drill": "Timed recall: 20 numbers, then 20 elements, then mixed prompts."
   },
   {
     "dayNumber": 6,
     "day": "Day 6",
-    "focus": "Add elements 101-118 and consolidate the final rooms.",
-    "numberRange": [
-      90,
-      99
-    ],
-    "elementRange": [
-      101,
-      118
-    ],
-    "rooms": [
-      "Train Station",
-      "Airport"
-    ],
-    "drill": "Do full-table walkthroughs and tighten weak loci by exaggerating the action."
+    "focus": "Add elements 101-118 in Train Station and Airport. Run the whole palace and tighten weak images.",
+    "numberRange": [0, 99],
+    "elementRange": [101, 118],
+    "rooms": ["Train Station", "Airport"],
+    "drill": "Whole-palace walkthrough, then fix any flat or confusing scenes."
   },
   {
     "dayNumber": 7,
     "day": "Day 7",
-    "focus": "Full review day: all 118 elements, all 100 number cues, and a teach-back session.",
-    "numberRange": [
-      0,
-      99
-    ],
-    "elementRange": [
-      1,
-      118
-    ],
-    "rooms": [
-      "All rooms"
-    ],
-    "drill": "Teach the palace to someone else or record yourself explaining it from memory."
+    "focus": "Full intensive review of 00-99 and all 118 elements. Teach it back to your son or record yourself explaining it.",
+    "numberRange": [0, 99],
+    "elementRange": [1, 118],
+    "rooms": ["All rooms"],
+    "drill": "Forward walk, backward walk, random jump drill, then a teach-back session."
   }
 ]

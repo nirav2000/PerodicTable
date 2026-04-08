@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-label="Hassium illustration">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0%" stop-color="#06b6d4"/>
+    <stop offset="100%" stop-color="#2563eb"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+    <stop offset="0%" stop-color="rgba(255,255,255,0.75)"/>
+    <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+  </radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+<rect width="960" height="640" rx="36" fill="#07111f"/>
+<rect x="18" y="18" width="924" height="604" rx="30" fill="url(#bg)"/>
+<circle cx="740" cy="120" r="100" fill="white" opacity="0.10" filter="url(#blur)"/>
+<circle cx="220" cy="480" r="150" fill="white" opacity="0.08" filter="url(#blur)"/>
+<text x="480" y="350" text-anchor="middle" font-size="180" opacity="0.96">⚙️</text>
+<path d="M120 500 C 260 350, 360 520, 470 430 S 700 260, 830 350" stroke="rgba(255,255,255,0.22)" stroke-width="18" fill="none" stroke-linecap="round"/>
+<text x="62" y="98" fill="white" font-family="Inter,Arial,sans-serif" font-size="28" opacity="0.88">108</text>
+<text x="60" y="180" fill="white" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="110">Hs</text>
+<text x="60" y="232" fill="rgba(255,255,255,0.92)" font-family="Inter,Arial,sans-serif" font-size="34">Hassium</text>
+<foreignObject x="60" y="270" width="460" height="150">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Inter,Arial,sans-serif;color:white;font-size:26px;line-height:1.35;opacity:.92;">
+    a hissing horse stamped with a metal H
+  </div>
+</foreignObject>
+<text x="60" y="560" fill="rgba(255,255,255,0.78)" font-family="Inter,Arial,sans-serif" font-size="24">Palace: Supermarket → receipt printer</text>
+<text x="900" y="592" text-anchor="end" fill="rgba(255,255,255,0.12)" font-family="Inter,Arial,sans-serif" font-size="64" font-weight="700">sofa</text>
+</svg>
