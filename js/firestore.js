@@ -1,5 +1,3 @@
-// Firestore scaffolding for the future. Kept separate so the app remains static-friendly on GitHub Pages.
-
 export const firebaseConfig = {
   apiKey: 'AIzaSyCo7kj93Gri9OxQW7gRFZ3zxIRvEzRHHOs',
   authDomain: 'perodictablepalace.firebaseapp.com',
@@ -11,29 +9,54 @@ export const firebaseConfig = {
 };
 
 export function futureFirestoreNotes() {
-  return `
-// Future Firestore entry point
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js';
-import { getFirestore, doc, getDoc, setDoc } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js';
-// Add auth here when you decide the sign-in flow.
+  return `import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js';
+import { getAuth, signInAnonymously, GoogleAuthProvider, signInWithPopup, linkWithPopup } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js';
+import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js';
 
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const db = getFirestore(app);
+const google = new GoogleAuthProvider();
 
-export async function loadRemoteState(uid) {
-  const ref = doc(db, 'users', uid, 'memory', 'periodic-table-palace');
-  const snap = await getDoc(ref);
+export async function ensureAnonymousSession() {
+  if (!auth.currentUser) await signInAnonymously(auth);
+  return auth.currentUser;
+}
+
+export async function upgradeToGoogle() {
+  const user = await ensureAnonymousSession();
+  return user.isAnonymous ? linkWithPopup(user, google) : signInWithPopup(auth, google);
+}
+
+// Shared family model
+// households/{householdId}
+// households/{householdId}/profiles/{profileId}
+// households/{householdId}/profiles/{profileId}/snapshots/{timestamp}
+
+export async function saveHouseholdState(householdId, profileId, payload) {
+  await setDoc(doc(db, 'households', householdId), {
+    app: 'periodic-table-palace',
+    updatedAt: serverTimestamp()
+  }, { merge: true });
+
+  await setDoc(doc(db, 'households', householdId, 'profiles', profileId), {
+    ...payload,
+    updatedAt: serverTimestamp()
+  }, { merge: true });
+}
+
+export async function loadHouseholdState(householdId, profileId) {
+  const snap = await getDoc(doc(db, 'households', householdId, 'profiles', profileId));
   return snap.exists() ? snap.data() : null;
+}`;
 }
 
-export async function saveRemoteState(uid, payload) {
-  const ref = doc(db, 'users', uid, 'memory', 'periodic-table-palace');
-  await setDoc(ref, payload, { merge: true });
-}
-
-// Info still needed from you:
-// 1. Which auth method should the app use?
-// 2. Should multiple family members share a single palace or have separate profiles?
-// 3. Do you want cloud sync to happen automatically or only when a sync button is tapped?
-`.trim();
+export function getFirestoreRequirements() {
+  return [
+    'Enable Anonymous authentication in Firebase Auth.',
+    'Enable Google as a sign-in provider in Firebase Auth.',
+    'Create Firestore security rules for households and profiles.',
+    'Decide whether one household id is created by invitation code or manually entered.',
+    'Decide whether quiz scores sync automatically or only after pressing Sync.'
+  ];
 }

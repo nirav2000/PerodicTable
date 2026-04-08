@@ -1,30 +1,127 @@
 [
   {
+    "dayNumber": 1,
     "day": "Day 1",
-    "focus": "Learn the number-image system for 00\u201319 and the first 20 elements. Build the first two palace rooms and practise linking element image + atomic number image + locus."
+    "focus": "Learn number images 00-19, elements 1-20, and the first two palace rooms.",
+    "numberRange": [
+      0,
+      19
+    ],
+    "elementRange": [
+      1,
+      20
+    ],
+    "rooms": [
+      "Front Garden",
+      "Living Room"
+    ],
+    "drill": "Walk the first 20 loci forward, then name the element from the locus without looking."
   },
   {
+    "dayNumber": 2,
     "day": "Day 2",
-    "focus": "Extend the number-image system to 20\u201339. Review elements 1\u201320 and add elements 21\u201340 in rooms 3 and 4. Do two speed-recall rounds."
+    "focus": "Extend number images to 20-39 and add elements 21-40 in rooms 3 and 4.",
+    "numberRange": [
+      20,
+      39
+    ],
+    "elementRange": [
+      21,
+      40
+    ],
+    "rooms": [
+      "Kitchen",
+      "Bedroom"
+    ],
+    "drill": "Say atomic number, symbol, and name aloud for each new element."
   },
   {
+    "dayNumber": 3,
     "day": "Day 3",
-    "focus": "Extend the number-image system to 40\u201359. Add elements 41\u201360. Practise saying symbol, name, and atomic number aloud from the palace."
+    "focus": "Extend number images to 40-59 and add elements 41-60.",
+    "numberRange": [
+      40,
+      59
+    ],
+    "elementRange": [
+      41,
+      60
+    ],
+    "rooms": [
+      "Bathroom",
+      "Hallway"
+    ],
+    "drill": "Jump to random loci and recall both the element and the number cue."
   },
   {
+    "dayNumber": 4,
     "day": "Day 4",
-    "focus": "Extend the number-image system to 60\u201379. Add elements 61\u201380. Start noticing families: alkali metals, halogens, noble gases, lanthanides."
+    "focus": "Extend number images to 60-79 and add elements 61-80.",
+    "numberRange": [
+      60,
+      79
+    ],
+    "elementRange": [
+      61,
+      80
+    ],
+    "rooms": [
+      "Office",
+      "Gym"
+    ],
+    "drill": "Start grouping by family: halogens, noble gases, alkali metals, lanthanides."
   },
   {
+    "dayNumber": 5,
     "day": "Day 5",
-    "focus": "Finish the number-image system 80\u201399. Add elements 81\u2013100. Run forward and backward recall drills from random loci."
+    "focus": "Finish number images 80-99 and add elements 81-100.",
+    "numberRange": [
+      80,
+      99
+    ],
+    "elementRange": [
+      81,
+      100
+    ],
+    "rooms": [
+      "Supermarket",
+      "Park"
+    ],
+    "drill": "Run forward and backward recall drills and fix any weak images."
   },
   {
+    "dayNumber": 6,
     "day": "Day 6",
-    "focus": "Add elements 101\u2013118. Practise full-table walkthroughs, then quiz yourself on random symbols and atomic numbers. Tighten any weak images."
+    "focus": "Add elements 101-118 and consolidate the final rooms.",
+    "numberRange": [
+      90,
+      99
+    ],
+    "elementRange": [
+      101,
+      118
+    ],
+    "rooms": [
+      "Train Station",
+      "Airport"
+    ],
+    "drill": "Do full-table walkthroughs and tighten weak loci by exaggerating the action."
   },
   {
+    "dayNumber": 7,
     "day": "Day 7",
-    "focus": "Do an intensive review: full palace run, random number drill 00\u201399, random element drill 1\u2013118, and a teach-back session where you explain the table to someone else or record yourself."
+    "focus": "Full review day: all 118 elements, all 100 number cues, and a teach-back session.",
+    "numberRange": [
+      0,
+      99
+    ],
+    "elementRange": [
+      1,
+      118
+    ],
+    "rooms": [
+      "All rooms"
+    ],
+    "drill": "Teach the palace to someone else or record yourself explaining it from memory."
   }
 ]

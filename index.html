@@ -12,15 +12,13 @@
         <p class="eyebrow">Offline-first memory trainer</p>
         <h1>Periodic Table Palace</h1>
         <p class="hero-copy">
-          Build your 00-99 number-image system, customise vivid element images, walk a full 118-locus memory palace, and follow a 7-day intensive plan.
+          Build a personal 00-99 number-image system, customise vivid images for all 118 elements,
+          walk a full memory palace, and train with a 7-day intensive plan with daily mini tests.
         </p>
       </div>
       <div class="hero-actions">
         <button id="exportBtn" class="btn">Export JSON</button>
-        <label class="btn ghost upload-btn">
-          Import JSON
-          <input id="importInput" type="file" accept="application/json" hidden />
-        </label>
+        <label class="btn ghost upload-btn">Import JSON<input id="importInput" type="file" accept="application/json" hidden /></label>
         <button id="resetBtn" class="btn ghost danger">Reset to defaults</button>
       </div>
     </header>
@@ -40,121 +38,89 @@
           <article class="card stat-card">
             <h2>How to link information</h2>
             <ol class="steps">
-              <li><strong>Element image:</strong> Turn the element into a vivid scene.</li>
-              <li><strong>Atomic number image:</strong> Convert the number into your 00-99 cue.</li>
-              <li><strong>Collision:</strong> Make both images interact violently or absurdly.</li>
-              <li><strong>Locus:</strong> Drop the combined scene on the fixed palace location.</li>
-              <li><strong>Recall:</strong> Walk the palace and decode place → number → element.</li>
+              <li><strong>Element image:</strong> turn the element into one vivid moving scene.</li>
+              <li><strong>Atomic number image:</strong> convert the number into your 00-99 cue.</li>
+              <li><strong>Collision:</strong> make both images interact absurdly.</li>
+              <li><strong>Locus:</strong> freeze the collision at a specific place in the palace.</li>
+              <li><strong>Recall loop:</strong> say number, symbol, name, image, and location aloud.</li>
             </ol>
           </article>
-          <article class="card stat-card">
-            <h2>Suggested daily use</h2>
-            <ul class="compact-list">
-              <li>10 minutes: number-image review</li>
-              <li>10 minutes: element encoding</li>
-              <li>5 minutes: palace walkthrough</li>
-              <li>5 minutes: random quiz or teach-back</li>
-            </ul>
-            <p class="muted">The app saves to localStorage today. Firestore wiring is included but disabled until you add Firestore rules and choose an auth approach.</p>
+          <article class="card">
+            <h2>Quick start examples</h2>
+            <div id="quickStart" class="grid"></div>
           </article>
         </div>
-        <section class="card">
-          <h2>Quick start</h2>
-          <div id="quickStart" class="quick-start"></div>
-        </section>
       </section>
 
       <section id="numbers" class="tab-panel">
-        <section class="card toolbar-card">
-          <div>
-            <h2>00-99 Number-Image System</h2>
-            <p class="muted">Tap any row to edit the cue word or vivid image so it matches your own associations.</p>
-          </div>
-          <input id="numberSearch" type="search" placeholder="Filter by number or cue..." />
-        </section>
-        <section id="numbersGrid" class="grid cards"></section>
+        <div class="toolbar"><input id="numberSearch" placeholder="Search numbers, cues, or images" /></div>
+        <div id="numbersGrid" class="grid cards-grid"></div>
       </section>
 
       <section id="elements" class="tab-panel">
-        <section class="card toolbar-card">
-          <div>
-            <h2>Element Image Bank</h2>
-            <p class="muted">Every element starts with a vivid default. Edit any image so the scene is more personal and memorable.</p>
-          </div>
-          <input id="elementSearch" type="search" placeholder="Filter by name, symbol, number, family..." />
-        </section>
-        <section id="elementsGrid" class="grid cards"></section>
+        <div class="toolbar"><input id="elementSearch" placeholder="Search by number, symbol, name, category, or image" /></div>
+        <div id="elementsGrid" class="grid cards-grid"></div>
       </section>
 
       <section id="palace" class="tab-panel">
-        <section class="card">
-          <h2>Full 118-element memory palace</h2>
-          <p class="muted">Each room is fixed. Do not move loci around casually once you start memorising.</p>
-          <div id="palaceRooms" class="palace-rooms"></div>
-        </section>
+        <div class="grid two">
+          <article class="card">
+            <h2>Full 118-locus palace</h2>
+            <p class="muted">Twelve rooms, fixed loci, and all elements pre-linked so you can customise rather than build from scratch.</p>
+          </article>
+          <article class="card">
+            <h2>Palace training tip</h2>
+            <p>Walk each room forward, then backward. Then jump to random loci: “What lives on the kitchen sink?”</p>
+          </article>
+        </div>
+        <div id="palaceRooms" class="grid"></div>
       </section>
 
       <section id="plan" class="tab-panel">
-        <section class="card">
-          <h2>7-day intensive plan</h2>
-          <div id="planGrid" class="grid cards"></div>
-        </section>
+        <div class="grid two">
+          <article class="card">
+            <h2>7-day intensive plan</h2>
+            <p class="muted">Tap a day to open its resources and mini test.</p>
+            <div id="planGrid" class="grid"></div>
+          </article>
+          <article class="card">
+            <div id="dayDetail"></div>
+          </article>
+        </div>
       </section>
 
       <section id="settings" class="tab-panel">
         <div class="grid two">
           <article class="card">
-            <h2>Storage</h2>
-            <p><strong>Current mode:</strong> <span id="storageModeLabel">Local only</span></p>
-            <p class="muted">Local storage is active now. Firestore scaffolding is ready for a future phase.</p>
+            <h2>Cloud sync roadmap</h2>
+            <p>Anonymous auth is the default. Google sign-in can be used later to preserve ownership or manage family access. Family sharing is modelled with a household id plus separate profiles.</p>
+            <pre id="firebaseSnippet" class="code-block"></pre>
           </article>
           <article class="card">
-            <h2>Firestore future setup</h2>
-            <ul class="compact-list">
-              <li>Choose authentication: anonymous, email/password, or Google sign-in.</li>
-              <li>Create Firestore rules for a per-user <code>users/{uid}</code> document.</li>
-              <li>Confirm whether you want shared family access for your son or only your own private data.</li>
-              <li>Decide whether version archives should also be mirrored in Firestore.</li>
+            <h2>What Firestore will store</h2>
+            <ul class="steps compact">
+              <li><strong>Household</strong>: shared palace and version metadata</li>
+              <li><strong>Profiles</strong>: each family member's edits and quiz results</li>
+              <li><strong>Sessions</strong>: optional sync snapshots and timestamps</li>
             </ul>
-            <pre class="code-block" id="firebaseSnippet"></pre>
+            <div id="syncChecklist"></div>
           </article>
         </div>
       </section>
     </main>
 
     <footer class="app-footer">
-      <span>Periodic Table Palace</span>
-      <button id="versionButton" class="version-link" type="button">v0.1.0</button>
+      <span>Built for GitHub Pages · local-first</span>
+      <button id="versionButton" class="version-link" aria-haspopup="dialog">v0.0.0</button>
     </footer>
 
     <dialog id="versionDialog" class="modal">
       <article>
-        <div class="modal-header">
-          <h2>Version information</h2>
-          <button id="closeVersionDialog" class="icon-btn" type="button" aria-label="Close version dialog">✕</button>
-        </div>
+        <div class="row between"><h2>Version history</h2><button id="closeVersionDialog" class="icon-btn" aria-label="Close">✕</button></div>
         <div id="versionDetails"></div>
       </article>
     </dialog>
 
-    <template id="editableCardTemplate">
-      <article class="card editable-card">
-        <div class="row between wrap gap-sm">
-          <h3 class="card-title"></h3>
-          <span class="badge"></span>
-        </div>
-        <p class="meta"></p>
-        <label>
-          <span>Cue</span>
-          <input class="cue-input" />
-        </label>
-        <label>
-          <span>Vivid image</span>
-          <textarea class="image-input" rows="3"></textarea>
-        </label>
-      </article>
-    </template>
-
-    <script src="js/app.js" type="module"></script>
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>

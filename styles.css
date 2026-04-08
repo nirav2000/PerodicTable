@@ -88,3 +88,16 @@ code { color: var(--accent-2); }
   .hero,.card { border-radius:18px; }
   .tabbar { position: sticky; top: .5rem; z-index: 20; backdrop-filter: blur(16px); }
 }
+
+
+.toolbar input { width:100%; padding:.9rem 1rem; border-radius:14px; border:1px solid var(--line); background:#0d1a30; color:var(--text); }
+.day-card { text-align:left; width:100%; }
+.day-card.selected { outline:2px solid var(--accent); }
+.inset-card { margin-top:1rem; background: rgba(255,255,255,.02); }
+.chip-row { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.75rem; }
+.quiz-q { border:1px solid var(--line); border-radius:16px; padding:.8rem; margin:0 0 .8rem; }
+.quiz-option { display:flex; gap:.5rem; margin:.45rem 0; align-items:flex-start; }
+.quiz-result { margin-top:1rem; }
+.code-block { white-space:pre-wrap; font-size:.85rem; overflow:auto; }
+.compact li { margin-bottom:.45rem; }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; } .grid.two { grid-template-columns: 1fr; } }

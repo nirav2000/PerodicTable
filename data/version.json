@@ -1,6 +1,6 @@
 {
-  "currentVersion": "0.1.0",
+  "currentVersion": "0.2.0",
   "releasedAt": "2026-04-08",
-  "description": "Initial offline-first release with editable 00-99 number-image system, full 118-element memory palace, 7-day intensive plan, local save, and Firestore scaffolding.",
+  "description": "Added richer daily resources, daily mini tests, family-share Firestore model, and improved day-by-day navigation.",
   "archive": []
 }
