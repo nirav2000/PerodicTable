@@ -77,11 +77,18 @@ function bindEvents() {
   els.importInput.addEventListener('change', async (event) => {
     const file = event.target.files?.[0];
     if (!file) return;
-    const imported = await importState(file);
-    if (imported?.numberImages?.length === state.numberImages.length) state.numberImages = imported.numberImages;
-    if (imported?.elements?.length === state.elements.length) state.elements = imported.elements;
-    persist();
-    renderAll();
+    try {
+      const imported = await importState(file);
+      if (imported?.numberImages?.length === state.numberImages.length) state.numberImages = imported.numberImages;
+      if (imported?.elements?.length === state.elements.length) state.elements = imported.elements;
+      if (Number.isInteger(imported?.selectedDay)) state.selectedDay = imported.selectedDay;
+      persist();
+      renderAll();
+    } catch {
+      els.authStatus.textContent = 'Import failed. Please choose a valid backup JSON file.';
+    } finally {
+      event.target.value = '';
+    }
   });
   els.resetBtn.addEventListener('click', () => {
     resetState();
@@ -177,6 +184,10 @@ function renderPlan() {
 
 function renderDayDetail() {
   const day = state.plan.find((item) => item.dayNumber === state.selectedDay) || state.plan[0];
+  if (!day) {
+    els.dayDetail.innerHTML = '<p class="muted">No daily plan loaded.</p>';
+    return;
+  }
   const elementItems = state.elements.filter((item) => item.atomicNumber >= day.elementRange[0] && item.atomicNumber <= day.elementRange[1]);
   const numberItems = state.numberImages.filter((item) => item.number >= day.numberRange[0] && item.number <= day.numberRange[1]);
   const quiz = buildQuiz(elementItems, numberItems);
@@ -311,7 +322,8 @@ function openVersionDialog() {
 
 function getLinkingHint(item) {
   const cue = state.numberImages[item.atomicNumber % 100];
-  return `${item.defaultImage} colliding with ${cue.label}, then locked into ${item.memoryPalace.room} → ${item.memoryPalace.locus}.`;
+  const cueLabel = cue?.label || `#${pad2(item.atomicNumber % 100)}`;
+  return `${item.defaultImage} colliding with ${cueLabel}, then locked into ${item.memoryPalace.room} → ${item.memoryPalace.locus}.`;
 }
 
 function snapshotState() {

@@ -1,8 +1,28 @@
 {
-  "currentVersion": "0.3.0",
+  "currentVersion": "0.4.2",
   "releasedAt": "2026-04-08",
-  "description": "Google-inspired UI refresh, clickable day resources, daily mini tests, Firebase auth scaffold for anonymous plus Google sign-in, and 118 SVG illustration assets.",
+  "description": "Release archive + push follow-up: promoted polished Google-ML-inspired UI while preserving resilient import/day detail behavior.",
   "archive": [
+    {
+      "version": "0.4.1",
+      "path": "archive/v0.4.1/",
+      "description": "Refined Google ML Guides visual direction: neutral gray page background, pill navigation, subtle bordered cards, tighter radii, and cleaner typography hierarchy."
+    },
+    {
+      "version": "0.4.0",
+      "path": "archive/v0.4.0/",
+      "description": "UI refresh inspired by Google ML Guides: light surfaces, cleaner nav/buttons, improved focus states, and updated visual hierarchy across app cards and forms."
+    },
+    {
+      "version": "0.3.1",
+      "path": "archive/v0.3.1/",
+      "description": "Improved app resilience: safer JSON import handling, selected-day restore on import, fallback rendering when plan data is missing, and defensive linking hints."
+    },
+    {
+      "version": "0.3.0",
+      "path": "archive/v0.3.0/",
+      "description": "Google-inspired UI refresh, clickable day resources, daily mini tests, Firebase auth scaffold for anonymous plus Google sign-in, and 118 SVG illustration assets."
+    },
     {
       "version": "0.2.0",
       "path": "archive/v0.2.0/",
